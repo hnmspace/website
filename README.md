@@ -1,16 +1,23 @@
-## Hi there 👋
+# HNM SPACE MVP Website
 
-<!--
-**hnmspace/hnmspace** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## Quick Start
 
-Here are some ideas to get you started:
+```bash
+npm install
+npm run dev
+```
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+Open http://localhost:3000
+
+## Deploy
+
+1. Upload this folder to GitHub.
+2. Import the repository on Vercel.
+3. Connect `hnmspace.com` in Vercel Domains.
+4. In Gabia DNS, set the records Vercel provides.
+
+## Current Contact Email
+
+hm.business.op@gmail.com
+
+Replace with `hello@hnmspace.com` later if domain email is created.
