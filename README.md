@@ -1,14 +1,3 @@
-# HNM SPACE Website v2
+# HNM SPACE Website v3.0
 
-Brand website for HNM SPACE.
-
-## Stack
-
-- Next.js
-- TypeScript
-- CSS
-- Vercel
-
-## Update
-
-Upload this folder to the `hnmspace/website` GitHub repository. Vercel will redeploy automatically.
+Brand-focused one-page website for HNM Space.
