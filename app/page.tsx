@@ -1,29 +1,35 @@
 import RevealController from './reveal'
 
-const capabilities = [
+const process = [
   {
     number: '01',
-    title: 'Strategy',
-    text: '브랜드가 어디에서 성장할 수 있는지 먼저 봅니다.',
+    title: 'Understand',
+    text: '브랜드의 현재 위치와 성장 가능성을 먼저 봅니다.',
   },
   {
     number: '02',
-    title: 'Execution',
-    text: '필요한 일을 정확하게 실행하고, 결과로 판단합니다.',
+    title: 'Structure',
+    text: '마케팅, 커머스, 유통이 따로 움직이지 않도록 구조를 만듭니다.',
   },
   {
     number: '03',
-    title: 'Scale',
-    text: '검증된 흐름이 반복될 수 있도록 확장합니다.',
+    title: 'Execute',
+    text: '필요한 일을 정확하게 실행하고, 결과를 기준으로 판단합니다.',
   },
 ]
 
-const fields = ['Marketing', 'Commerce', 'Distribution']
+const fields = [
+  { title: 'Marketing', text: 'Performance · Search · Social' },
+  { title: 'Commerce', text: 'Store · Product · Growth' },
+  { title: 'Distribution', text: 'Channel · Marketplace · Expansion' },
+]
 
 export default function Home() {
   return (
     <main>
       <RevealController />
+      <div className="scroll-progress" aria-hidden="true" />
+
       <header className="site-header">
         <a className="brand" href="#top" aria-label="HNM Space home">
           <img src="/png_03.png" alt="HNM Space" />
@@ -35,15 +41,16 @@ export default function Home() {
         </nav>
       </header>
 
-      <section id="top" className="hero">
-        <div className="hero-mark" data-reveal>
+      <section id="top" className="hero" data-section="light">
+        <div className="hero-mark" data-reveal="hero">
           <img src="/png_01.png" alt="HNM Space" />
         </div>
         <p className="hero-line" data-reveal>Build. Grow. Last.</p>
+        <div className="hero-rule" data-line aria-hidden="true" />
         <div className="scroll-indicator" aria-hidden="true"><span>Scroll</span><i /></div>
       </section>
 
-      <section id="standard" className="statement-section">
+      <section id="standard" className="statement-section" data-section="light">
         <p className="section-kicker" data-reveal>01 / Standard</p>
         <h1 data-reveal>Not another agency.</h1>
         <div className="statement-copy" data-reveal>
@@ -52,13 +59,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="work" className="work-section">
+      <section id="work" className="work-section is-dark-section" data-section="dark">
         <div className="work-head">
-          <p className="section-kicker" data-reveal>02 / What we build</p>
+          <p className="section-kicker" data-reveal>02 / How we work</p>
           <h2 data-reveal>Structure<br />before noise.</h2>
         </div>
         <div className="work-list">
-          {capabilities.map((item) => (
+          {process.map((item) => (
             <article key={item.title} className="work-item" data-reveal>
               <span>{item.number}</span>
               <h3>{item.title}</h3>
@@ -68,26 +75,31 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="field-section">
+      <section className="field-section" data-section="light">
         <p className="section-kicker" data-reveal>03 / Fields</p>
         <div className="field-lines" data-reveal>
-          {fields.map((field) => <div key={field}>{field}</div>)}
+          {fields.map((field) => (
+            <div key={field.title} className="field-row">
+              <strong>{field.title}</strong>
+              <span>{field.text}</span>
+            </div>
+          ))}
         </div>
         <p className="field-note" data-reveal>
           세 영역을 따로 보지 않습니다. 브랜드가 성장하는 하나의 흐름으로 봅니다.
         </p>
       </section>
 
-      <section id="contact" className="contact-section">
+      <section id="contact" className="contact-section is-dark-section" data-section="dark">
         <p className="section-kicker" data-reveal>04 / Contact</p>
         <h2 data-reveal>한번 맡겨보고 싶다면.</h2>
         <div className="contact-links" data-reveal>
-          <a href="mailto:henry@hnmspace.com">henry@hnmspace.com</a>
-          <a href="https://hnmspace.com">hnmspace.com</a>
+          <a href="mailto:henry@hnmspace.com"><span>henry@hnmspace.com</span></a>
+          <a href="https://hnmspace.com"><span>hnmspace.com</span></a>
         </div>
       </section>
 
-      <footer>
+      <footer data-section="light">
         <img src="/png_05.png" alt="HNM" />
         <span>© 2026 HNM SPACE</span>
       </footer>

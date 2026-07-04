@@ -4,7 +4,12 @@ import { useEffect } from 'react'
 
 export default function RevealController() {
   useEffect(() => {
-    const targets = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal]'))
+    const targets = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal], [data-line]'))
+    const header = document.querySelector<HTMLElement>('.site-header')
+    const progress = document.querySelector<HTMLElement>('.scroll-progress')
+    const hero = document.querySelector<HTMLElement>('.hero')
+    const mark = document.querySelector<HTMLElement>('.hero-mark')
+    const darkSections = Array.from(document.querySelectorAll<HTMLElement>('.is-dark-section'))
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -15,25 +20,39 @@ export default function RevealController() {
           }
         })
       },
-      { threshold: 0.18, rootMargin: '0px 0px -8% 0px' }
+      { threshold: 0.16, rootMargin: '0px 0px -8% 0px' }
     )
 
     targets.forEach((target) => observer.observe(target))
 
-    const hero = document.querySelector<HTMLElement>('.hero')
-    const mark = document.querySelector<HTMLElement>('.hero-mark')
     const onScroll = () => {
-      if (!hero || !mark) return
-      const progress = Math.min(window.scrollY / Math.max(hero.offsetHeight, 1), 1)
-      mark.style.setProperty('--hero-progress', progress.toFixed(3))
+      const max = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1)
+      const pageProgress = Math.min(window.scrollY / max, 1)
+      progress?.style.setProperty('--scroll-progress', pageProgress.toFixed(4))
+
+      if (hero && mark) {
+        const heroProgress = Math.min(window.scrollY / Math.max(hero.offsetHeight, 1), 1)
+        mark.style.setProperty('--hero-progress', heroProgress.toFixed(3))
+      }
+
+      if (header) {
+        const checkpoint = header.offsetHeight + 12
+        const isDark = darkSections.some((section) => {
+          const rect = section.getBoundingClientRect()
+          return rect.top <= checkpoint && rect.bottom >= checkpoint
+        })
+        header.classList.toggle('is-dark', isDark)
+      }
     }
 
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
+    window.addEventListener('resize', onScroll)
 
     return () => {
       observer.disconnect()
       window.removeEventListener('scroll', onScroll)
+      window.removeEventListener('resize', onScroll)
     }
   }, [])
 
