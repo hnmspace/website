@@ -2,10 +2,10 @@ import './globals.css'
 
 export const metadata = {
   title: 'HNM SPACE',
-  description: 'Marketing, Commerce, Distribution. Built for brands that move from strategy to results.',
+  description: 'Marketing, Commerce, Distribution. Built for results.',
   openGraph: {
     title: 'HNM SPACE',
-    description: 'Marketing, Commerce, Distribution.',
+    description: 'Marketing, Commerce, Distribution. Built for results.',
     url: 'https://hnmspace.com',
     siteName: 'HNM SPACE',
     locale: 'ko_KR',

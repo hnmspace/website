@@ -1,28 +1,29 @@
 const capabilities = [
   {
-    label: '01',
+    number: '01',
     title: 'Marketing',
-    description: '성과를 만들기 위한 광고 구조를 설계하고 운영합니다.',
+    lead: '광고를 집행하는 것이 아니라 성과가 반복되는 구조를 설계합니다.',
     items: ['Performance Marketing', 'Search Advertising', 'Social Marketing', 'Ad Operation'],
   },
   {
-    label: '02',
+    number: '02',
     title: 'Commerce',
-    description: '고객 경험이 실제 구매로 이어지는 판매 구조를 만듭니다.',
+    lead: '고객 경험이 실제 구매로 이어지도록 판매 흐름을 정리합니다.',
     items: ['Smart Store', 'Coupang', 'D2C Store', 'Sales Strategy'],
   },
   {
-    label: '03',
+    number: '03',
     title: 'Distribution',
-    description: '브랜드가 더 넓은 시장으로 확장되는 유통 흐름을 설계합니다.',
+    lead: '브랜드가 더 넓은 시장으로 확장될 수 있는 유통 경로를 만듭니다.',
     items: ['Online Distribution', 'Marketplace', 'Channel Expansion', 'Brand Growth'],
   },
 ]
 
-const principles = [
-  ['01', 'No empty campaigns.', '성과 없는 광고 운영은 하지 않습니다.'],
-  ['02', 'Structure first.', '광고, 판매, 유통을 따로 보지 않고 하나의 성장 구조로 봅니다.'],
-  ['03', 'Execution matters.', '필요한 일을 정확하게 실행하고 결과로 판단합니다.'],
+const approach = [
+  ['Understand', '브랜드와 시장, 판매 구조를 먼저 이해합니다.'],
+  ['Structure', '마케팅·커머스·유통을 하나의 성장 흐름으로 설계합니다.'],
+  ['Execute', '필요한 일을 정확하게 실행하고 데이터로 판단합니다.'],
+  ['Scale', '검증된 결과가 반복될 수 있도록 확장합니다.'],
 ]
 
 export default function Home() {
@@ -39,54 +40,56 @@ export default function Home() {
         </nav>
       </header>
 
-      <section id="top" className="hero section">
-        <div className="hero-kicker">Marketing · Commerce · Distribution</div>
-        <img className="hero-logo" src="/png_01.png" alt="HNM Space" />
-        <h1>Built for brands<br />that move.</h1>
-        <p className="hero-sub">
-          HNM Space는 브랜드의 성장 과정을 설계하고 실행합니다.<br />
-          전략에서 광고, 판매와 유통까지. 결과로 이어지는 구조를 만듭니다.
-        </p>
+      <section id="top" className="hero">
+        <div className="hero-inner">
+          <img className="hero-logo" src="/png_01.png" alt="HNM Space" />
+          <div className="hero-copy">
+            <p className="eyebrow">Marketing · Commerce · Distribution</p>
+            <h1>Built for<br />results.</h1>
+            <p className="hero-description">
+              브랜드의 성장은 하나의 영역에서 만들어지지 않습니다.<br />
+              HNM Space는 마케팅, 커머스, 유통을 하나의 실행 구조로 연결합니다.
+            </p>
+          </div>
+        </div>
+        <div className="scroll-note">Scroll</div>
       </section>
 
-      <section id="about" className="section about-section">
-        <div className="section-index">01 / About</div>
-        <div className="about-copy">
-          <h2>Strategy is not enough.<br />Execution completes it.</h2>
+      <section id="about" className="section intro-section">
+        <div className="section-label">01 / Who we are</div>
+        <div className="intro-copy">
+          <h2>We design the structure behind growth.</h2>
           <p>
-            좋은 결과는 하나의 영역에서 만들어지지 않습니다. HNM Space는 Marketing, Commerce,
-            Distribution을 분리하지 않고 브랜드가 성장하는 하나의 흐름으로 연결합니다.
+            HNM Space는 광고만 운영하지 않습니다. 판매만 보지도 않습니다. 브랜드가 시장에서 성장하기 위해 필요한 전략, 실행, 판매, 유통의 흐름을 함께 설계합니다.
           </p>
         </div>
       </section>
 
-      <section className="section principle-section">
-        <div className="statement-block">
-          <p>Our Standard</p>
-          <h2>맡기면<br />결과가 나오는 회사.</h2>
+      <section className="section standard-section">
+        <div className="large-statement">
+          맡기면<br />결과가<br />나오는 회사.
         </div>
-        <div className="principle-list">
-          {principles.map(([number, title, description]) => (
-            <article key={number} className="principle-item">
-              <span>{number}</span>
-              <strong>{title}</strong>
-              <p>{description}</p>
-            </article>
-          ))}
+        <div className="standard-copy">
+          <p className="eyebrow">Our standard</p>
+          <p>
+            성과 없는 광고 운영은 하지 않습니다. 필요한 일을 정확하게 실행하고, 결과로 판단합니다. HNM Space의 기준은 화려한 설명보다 반복 가능한 결과에 있습니다.
+          </p>
         </div>
       </section>
 
       <section id="capabilities" className="section capabilities-section">
-        <div className="section-head">
-          <div className="section-index">02 / Capabilities</div>
+        <div className="section-title-row">
+          <div className="section-label">02 / Capabilities</div>
           <h2>Three functions.<br />One direction.</h2>
         </div>
-        <div className="capability-grid">
+        <div className="line-list">
           {capabilities.map((capability) => (
-            <article key={capability.title} className="capability-card">
-              <span>{capability.label}</span>
-              <h3>{capability.title}</h3>
-              <p>{capability.description}</p>
+            <article key={capability.title} className="line-item">
+              <div className="line-number">{capability.number}</div>
+              <div className="line-main">
+                <h3>{capability.title}</h3>
+                <p>{capability.lead}</p>
+              </div>
               <ul>
                 {capability.items.map((item) => (
                   <li key={item}>{item}</li>
@@ -99,31 +102,26 @@ export default function Home() {
 
       <section className="dark-section">
         <div className="dark-inner">
-          <div className="section-index light">03 / Approach</div>
-          <h2>Understand.<br />Build.<br />Execute.<br />Scale.</h2>
-          <p>
-            HNM Space는 더 많은 일을 하는 팀이 아니라, 필요한 일을 정확하게 하는 팀을 지향합니다.
-            복잡한 문제를 단순한 실행 구조로 정리하고, 결과가 반복될 수 있는 흐름을 만듭니다.
-          </p>
+          <div className="section-label light">03 / Approach</div>
+          <h2>Understand.<br />Structure.<br />Execute.<br />Scale.</h2>
+          <div className="approach-list">
+            {approach.map(([title, text], index) => (
+              <article key={title}>
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <strong>{title}</strong>
+                <p>{text}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
       <section id="contact" className="section contact-section">
-        <div className="section-index">04 / Contact</div>
+        <div className="section-label">04 / Contact</div>
         <h2>Let’s build<br />something that works.</h2>
-        <div className="contact-grid">
-          <div>
-            <span>Email</span>
-            <a href="mailto:henry@hnmspace.com">henry@hnmspace.com</a>
-          </div>
-          <div>
-            <span>Web</span>
-            <a href="https://hnmspace.com">hnmspace.com</a>
-          </div>
-          <div>
-            <span>Based</span>
-            <p>Boryeong, Korea</p>
-          </div>
+        <div className="contact-row">
+          <a href="mailto:henry@hnmspace.com">henry@hnmspace.com</a>
+          <a href="https://hnmspace.com">hnmspace.com</a>
         </div>
       </section>
 
