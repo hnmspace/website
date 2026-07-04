@@ -1,5 +1,3 @@
-# HNM SPACE Website v5.0
+# HNM Space Website v5.1
 
-- Verbal identity direction: less explanation, stronger impression.
-- Hero: official mark + short line.
-- Removed location text from visible sections.
+Point dark sections added for How We Work and Contact.
