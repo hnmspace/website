@@ -1,3 +1,5 @@
-# HNM SPACE Website v3.0
+# HNM SPACE Website v5.0
 
-Brand-focused one-page website for HNM Space.
+- Verbal identity direction: less explanation, stronger impression.
+- Hero: official mark + short line.
+- Removed location text from visible sections.
