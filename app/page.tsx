@@ -1,98 +1,104 @@
 const capabilities = [
   {
     title: 'Marketing',
-    items: ['Performance Marketing', 'Social Marketing', 'Search Advertising', 'Ad Operation']
+    items: ['Performance Marketing', 'Search Advertising', 'Social Marketing', 'Ad Operation'],
   },
   {
     title: 'Commerce',
-    items: ['Store Operation', 'Sales Strategy', 'Brand Growth', 'Channel Optimization']
+    items: ['Smart Store', 'Coupang', 'D2C Store', 'Sales Strategy'],
   },
   {
     title: 'Distribution',
-    items: ['Online Distribution', 'Marketplace', 'Channel Expansion', 'Sales Network']
-  }
-];
+    items: ['Online Distribution', 'Marketplace', 'Channel Expansion', 'Brand Growth'],
+  },
+]
 
-const approach = [
-  ['01', 'Understand', '브랜드와 시장, 판매 구조를 먼저 이해합니다.'],
-  ['02', 'Build', '실행 가능한 전략과 운영 구조를 설계합니다.'],
-  ['03', 'Execute', '광고, 콘텐츠, 커머스, 유통을 연결해 실행합니다.'],
-  ['04', 'Scale', '성과가 검증된 구조를 확장합니다.']
-];
+const process = ['Discover', 'Structure', 'Execute', 'Scale']
 
 export default function Home() {
   return (
     <main>
-      <header className="nav">
-        <a className="brand" href="#top" aria-label="HNM SPACE home">HNM SPACE</a>
-        <nav>
-          <a href="#philosophy">Philosophy</a>
+      <header className="site-header">
+        <a className="brand" href="#top" aria-label="HNM Space home">
+          <img src="/png_05.png" alt="HNM Space" />
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="#about">About</a>
           <a href="#capabilities">Capabilities</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
 
       <section id="top" className="hero section">
-        <div className="eyebrow">Based in Boryeong · Working everywhere</div>
-        <h1>HNM SPACE</h1>
-        <div className="hero-lines" aria-label="core business">
-          <span>Marketing</span>
-          <span>Commerce</span>
-          <span>Distribution</span>
+        <div className="hero-logo-wrap">
+          <img className="hero-logo" src="/png_01.png" alt="HNM Space" />
         </div>
+        <div className="hero-copy">
+          <p>Marketing</p>
+          <p>Commerce</p>
+          <p>Distribution</p>
+        </div>
+        <p className="hero-sub">Built for brands that move from strategy to results.</p>
       </section>
 
-      <section id="philosophy" className="section split">
-        <div className="section-label">Philosophy</div>
-        <div className="content-large">
-          <p>
-            HNM Space는 브랜드의 성장을 하나의 흐름으로 봅니다.
+      <section id="about" className="section split-section">
+        <p className="eyebrow">Who We Are</p>
+        <div>
+          <h1>We connect the structure of growth.</h1>
+          <p className="lead">
+            HNM Space는 Marketing, Commerce, Distribution을 하나의 흐름으로 바라봅니다.
+            브랜드가 성장하기 위해 필요한 전략, 실행, 판매, 유통의 구조를 함께 설계합니다.
           </p>
-          <p>
-            마케팅, 커머스, 유통을 분리하지 않고 전략부터 실행까지 연결합니다.
-            더 많은 일을 하는 것보다, 결과가 나오는 구조를 만드는 데 집중합니다.
-          </p>
         </div>
       </section>
 
-      <section className="section approach-section">
-        <div className="section-label">How we work</div>
-        <div className="approach-grid">
-          {approach.map(([num, title, desc]) => (
-            <article className="approach-card" key={title}>
-              <span>{num}</span>
-              <h2>{title}</h2>
-              <p>{desc}</p>
-            </article>
-          ))}
+      <section id="capabilities" className="section">
+        <div className="section-head">
+          <p className="eyebrow">Capabilities</p>
+          <h2>Three functions. One direction.</h2>
         </div>
-      </section>
-
-      <section id="capabilities" className="section capabilities-section">
-        <div className="section-label">Capabilities</div>
-        <div className="capability-list">
-          {capabilities.map((group) => (
-            <article className="capability" key={group.title}>
-              <h2>{group.title}</h2>
+        <div className="capability-grid">
+          {capabilities.map((capability) => (
+            <article key={capability.title} className="capability-card">
+              <h3>{capability.title}</h3>
               <ul>
-                {group.items.map((item) => <li key={item}>{item}</li>)}
+                {capability.items.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </article>
           ))}
         </div>
       </section>
 
+      <section className="section split-section process-section">
+        <p className="eyebrow">How We Work</p>
+        <div>
+          <h2>Less noise. More execution.</h2>
+          <div className="process-list">
+            {process.map((item, index) => (
+              <div key={item} className="process-item">
+                <span>{String(index + 1).padStart(2, '0')}</span>
+                <strong>{item}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="section contact-section">
-        <div className="section-label">Contact</div>
-        <h2>Let’s build together.</h2>
-        <a href="mailto:hm.business.op@gmail.com">hm.business.op@gmail.com</a>
+        <p className="eyebrow">Contact</p>
+        <h2>Let’s build something that works.</h2>
+        <div className="contact-links">
+          <a href="mailto:henry@hnmspace.com">henry@hnmspace.com</a>
+          <a href="https://hnmspace.com">hnmspace.com</a>
+        </div>
       </section>
 
       <footer>
-        <span>HNM SPACE</span>
-        <span>Marketing · Commerce · Distribution</span>
-        <span>© 2026</span>
+        <img src="/png_03.png" alt="HNM Space" />
+        <span>© 2026 HNM SPACE</span>
       </footer>
     </main>
-  );
+  )
 }

@@ -1,22 +1,22 @@
-import type { Metadata } from 'next';
-import './globals.css';
+import './globals.css'
 
-export const metadata: Metadata = {
+export const metadata = {
   title: 'HNM SPACE',
-  description: 'Marketing, Commerce, Distribution. HNM Space connects strategy and execution for brands ready to grow.',
+  description: 'Marketing, Commerce, Distribution. Built for brands that move from strategy to results.',
   openGraph: {
     title: 'HNM SPACE',
-    description: 'Marketing · Commerce · Distribution',
+    description: 'Marketing, Commerce, Distribution.',
     url: 'https://hnmspace.com',
     siteName: 'HNM SPACE',
-    type: 'website'
-  }
-};
+    locale: 'ko_KR',
+    type: 'website',
+  },
+}
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
       <body>{children}</body>
     </html>
-  );
+  )
 }

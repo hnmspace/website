@@ -1,23 +1,14 @@
-# HNM SPACE MVP Website
+# HNM SPACE Website v2
 
-## Quick Start
+Brand website for HNM SPACE.
 
-```bash
-npm install
-npm run dev
-```
+## Stack
 
-Open http://localhost:3000
+- Next.js
+- TypeScript
+- CSS
+- Vercel
 
-## Deploy
+## Update
 
-1. Upload this folder to GitHub.
-2. Import the repository on Vercel.
-3. Connect `hnmspace.com` in Vercel Domains.
-4. In Gabia DNS, set the records Vercel provides.
-
-## Current Contact Email
-
-hm.business.op@gmail.com
-
-Replace with `hello@hnmspace.com` later if domain email is created.
+Upload this folder to the `hnmspace/website` GitHub repository. Vercel will redeploy automatically.
