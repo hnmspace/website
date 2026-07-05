@@ -19,9 +19,9 @@ const process = [
 ]
 
 const fields = [
-  { title: 'Marketing', text: 'Performance · Search · Social' },
-  { title: 'Commerce', text: 'Store · Product · Growth' },
-  { title: 'Distribution', text: 'Channel · Marketplace · Expansion' },
+  { title: 'Marketing', text: 'Performance · Content · Brand' },
+  { title: 'Commerce', text: 'Strategy · Operation · Growth' },
+  { title: 'Distribution', text: 'Network · Expansion · Partnership' },
 ]
 
 export default function Home() {
@@ -52,14 +52,31 @@ export default function Home() {
       </section>
 
       <section id="standard" className="statement-section" data-section="light">
-        <p className="section-kicker" data-reveal>01 / Standard</p>
-        <h1 data-reveal>말보다<br />결과.</h1>
-        <div className="statement-copy" data-reveal>
-          <p>우리는 더 많은 설명보다, 필요한 일을 정확히 실행합니다.</p>
-          <p>성과 없는 운영은 하지 않습니다.</p>
+        <div className="statement-head">
+          <p className="section-kicker" data-reveal>01 / Standard</p>
+          <h1 data-reveal>좋은 결과는<br />기준에서<br />시작됩니다.</h1>
         </div>
-        <div className="material-panel" data-reveal aria-hidden="true">
-          <span />
+        <div className="standard-principles" data-reveal>
+          <article className="standard-item">
+            <span>01</span>
+            <strong>Execution First.</strong>
+            <p>말보다 실행을 우선합니다.</p>
+          </article>
+          <article className="standard-item">
+            <span>02</span>
+            <strong>Clarity Over Complexity.</strong>
+            <p>복잡함보다 명확함을 선택합니다.</p>
+          </article>
+          <article className="standard-item">
+            <span>03</span>
+            <strong>Built to Last.</strong>
+            <p>오래가는 결과를 만듭니다.</p>
+          </article>
+          <article className="standard-item">
+            <span>04</span>
+            <strong>Details Matter.</strong>
+            <p>작은 디테일이 신뢰를 만듭니다.</p>
+          </article>
         </div>
       </section>
 
@@ -90,7 +107,7 @@ export default function Home() {
           ))}
         </div>
         <p className="field-note" data-reveal>
-          세 영역을 따로 보지 않습니다. 브랜드가 성장하는 하나의 흐름으로 봅니다.
+          Designed to work independently.<br />Built to work together.
         </p>
       </section>
 
