@@ -2,14 +2,19 @@ import './globals.css'
 
 export const metadata = {
   title: 'HNM SPACE',
-  description: 'Build. Grow. Last. HNM Space creates structures for brands that want to move.',
+  description: 'HNM SPACE builds reliable structures across marketing, commerce, and distribution.'
+  icons: {
+    icon: '/png_05.png',
+    apple: '/png_05.png',
+  },
   openGraph: {
     title: 'HNM SPACE',
-    description: 'Build. Grow. Last. HNM Space creates structures for brands that want to move.',
+    description: 'HNM SPACE builds reliable structures across marketing, commerce, and distribution.'
     url: 'https://hnmspace.com',
     siteName: 'HNM SPACE',
     locale: 'ko_KR',
     type: 'website',
+    images: ['/png_01.png'],
   },
 }
 
