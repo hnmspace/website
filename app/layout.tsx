@@ -4,8 +4,8 @@ export const metadata = {
   title: 'HNM SPACE',
   description: 'HNM SPACE builds reliable structures across marketing, commerce, and distribution.',
   icons: {
-    icon: '/png_05.png',
-    apple: '/png_05.png',
+    icon: '/hnm-symbol-black.png',
+    apple: '/hnm-symbol-black.png',
   },
   openGraph: {
     title: 'HNM SPACE',
@@ -14,7 +14,7 @@ export const metadata = {
     siteName: 'HNM SPACE',
     locale: 'ko_KR',
     type: 'website',
-    images: ['/png_01.png'],
+    images: ['/hnm-logo-primary-black.png'],
   },
 }
 
