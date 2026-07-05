@@ -7,6 +7,7 @@ export default function RevealController() {
     const targets = Array.from(document.querySelectorAll<HTMLElement>('[data-reveal], [data-line]'))
     const header = document.querySelector<HTMLElement>('.site-header')
     const progress = document.querySelector<HTMLElement>('.scroll-progress')
+    const ambient = document.querySelector<HTMLElement>('.ambient-layer')
     const hero = document.querySelector<HTMLElement>('.hero')
     const mark = document.querySelector<HTMLElement>('.hero-mark')
     const darkSections = Array.from(document.querySelectorAll<HTMLElement>('.is-dark-section'))
@@ -29,6 +30,8 @@ export default function RevealController() {
       const max = Math.max(document.documentElement.scrollHeight - window.innerHeight, 1)
       const pageProgress = Math.min(window.scrollY / max, 1)
       progress?.style.setProperty('--scroll-progress', pageProgress.toFixed(4))
+      document.documentElement.style.setProperty('--scroll-y', pageProgress.toFixed(4))
+      ambient?.style.setProperty('--ambient-shift', (pageProgress * 100).toFixed(2))
 
       if (hero && mark) {
         const heroProgress = Math.min(window.scrollY / Math.max(hero.offsetHeight, 1), 1)
@@ -49,10 +52,19 @@ export default function RevealController() {
     window.addEventListener('scroll', onScroll, { passive: true })
     window.addEventListener('resize', onScroll)
 
+    const onPointer = (event: PointerEvent) => {
+      const x = event.clientX / Math.max(window.innerWidth, 1)
+      const y = event.clientY / Math.max(window.innerHeight, 1)
+      document.documentElement.style.setProperty('--mouse-x', x.toFixed(4))
+      document.documentElement.style.setProperty('--mouse-y', y.toFixed(4))
+    }
+    window.addEventListener('pointermove', onPointer, { passive: true })
+
     return () => {
       observer.disconnect()
       window.removeEventListener('scroll', onScroll)
       window.removeEventListener('resize', onScroll)
+      window.removeEventListener('pointermove', onPointer)
     }
   }, [])
 

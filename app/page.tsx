@@ -4,17 +4,17 @@ const process = [
   {
     number: '01',
     title: 'Understand',
-    text: '브랜드의 현재 위치와 성장 가능성을 먼저 봅니다.',
+    text: '브랜드의 현재 위치와 움직일 수 있는 방향을 먼저 봅니다.',
   },
   {
     number: '02',
-    title: 'Structure',
-    text: '마케팅, 커머스, 유통이 따로 움직이지 않도록 구조를 만듭니다.',
+    title: 'Shape',
+    text: '마케팅, 커머스, 유통이 하나의 구조로 작동하도록 정리합니다.',
   },
   {
     number: '03',
     title: 'Execute',
-    text: '필요한 일을 정확하게 실행하고, 결과를 기준으로 판단합니다.',
+    text: '말보다 실행을 기준으로 움직이고, 결과로 다음 판단을 만듭니다.',
   },
 ]
 
@@ -28,6 +28,7 @@ export default function Home() {
   return (
     <main>
       <RevealController />
+      <div className="ambient-layer" aria-hidden="true" />
       <div className="scroll-progress" aria-hidden="true" />
 
       <header className="site-header">
@@ -45,17 +46,20 @@ export default function Home() {
         <div className="hero-mark" data-reveal="hero">
           <img src="/png_01.png" alt="HNM Space" />
         </div>
-        <p className="hero-line" data-reveal>Build. Grow. Last.</p>
+        <p className="hero-line" data-reveal>Less noise. More execution.</p>
         <div className="hero-rule" data-line aria-hidden="true" />
         <div className="scroll-indicator" aria-hidden="true"><span>Scroll</span><i /></div>
       </section>
 
       <section id="standard" className="statement-section" data-section="light">
         <p className="section-kicker" data-reveal>01 / Standard</p>
-        <h1 data-reveal>Not another agency.</h1>
+        <h1 data-reveal>말보다<br />결과.</h1>
         <div className="statement-copy" data-reveal>
-          <p>우리는 더 많은 말을 하기보다, 필요한 일을 정확히 합니다.</p>
+          <p>우리는 더 많은 설명보다, 필요한 일을 정확히 실행합니다.</p>
           <p>성과 없는 운영은 하지 않습니다.</p>
+        </div>
+        <div className="material-panel" data-reveal aria-hidden="true">
+          <span />
         </div>
       </section>
 
