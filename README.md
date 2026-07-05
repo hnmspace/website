@@ -1,14 +1,13 @@
-# HNM Website 1.0 RC1
+# HNM SPACE Website 1.0 RC2-1
 
-Release Candidate 1 for hnmspace.com.
+Release candidate polish focused on Standard, Expertise, typography, and spacing.
 
-## Included
-- STANDARD section refinement
-- OUR EXPERTISE / FIELDS copy update
-- Marketing / Commerce / Distribution captions finalized
-- Ambient motion and material texture
-- Scroll progress / line motion / hover details
-- Basic SEO metadata, robots.txt, sitemap.xml
+## Changes
+- Reworked STANDARD section copy and hierarchy
+- Updated Expertise title and confirmed captions
+- Repositioned Expertise supporting copy
+- Refined typography, spacing, header logo sizing, and section rhythm
+- Updated metadata / Open Graph description
 
 ## Deploy
-Upload all files and folders to the root of the GitHub `website` repository.
+Upload all files in this folder to the root of the GitHub `website` repository.

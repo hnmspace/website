@@ -1,15 +1,16 @@
 import './globals.css'
 
 export const metadata = {
+  metadataBase: new URL('https://hnmspace.com'),
   title: 'HNM SPACE',
-  description: 'HNM SPACE builds reliable structures across marketing, commerce, and distribution.',
+  description: 'HNM SPACE works across marketing, commerce, and distribution with a focus on structure, execution, and trust.',
   icons: {
     icon: '/hnm-symbol-black.png',
     apple: '/hnm-symbol-black.png',
   },
   openGraph: {
     title: 'HNM SPACE',
-    description: 'HNM SPACE builds reliable structures across marketing, commerce, and distribution.',
+    description: 'Marketing, commerce, and distribution — designed to work independently, built to work together.',
     url: 'https://hnmspace.com',
     siteName: 'HNM SPACE',
     locale: 'ko_KR',

@@ -2,7 +2,7 @@
   --bg: #f8f8f6;
   --text: #111111;
   --muted: #77736d;
-  --line: rgba(17, 17, 17, 0.12);
+  --line: rgba(17, 17, 17, 0.115);
   --dark: #0f0f0e;
   --dark-muted: rgba(255,255,255,0.58);
   --dark-line: rgba(255,255,255,0.16);
@@ -25,7 +25,7 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  letter-spacing: -0.026em;
+  letter-spacing: -0.022em;
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
 }
@@ -105,7 +105,7 @@ main { z-index: 1; }
   background: rgba(15, 15, 14, 0.72);
   border-bottom-color: rgba(255,255,255,0.08);
 }
-.brand img { display: block; height: 18px; width: auto; max-width: none; object-fit: contain; transition: filter var(--base) var(--ease), opacity var(--base) var(--ease); }
+.brand img { display: block; height: 17px; width: auto; max-width: none; object-fit: contain; transition: filter var(--base) var(--ease), opacity var(--base) var(--ease); }
 .site-header.is-dark .brand img { filter: invert(1); opacity: 0.94; }
 
 /* Official HNM logo assets must keep their original ratio. */
@@ -116,7 +116,7 @@ footer img {
   flex: 0 0 auto;
 }
 
-nav { display: flex; align-items: center; gap: 32px; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; }
+nav { display: flex; align-items: center; gap: 30px; font-size: 11px; color: var(--muted); letter-spacing: 0.04em; }
 .site-header.is-dark nav { color: rgba(255,255,255,0.58); }
 nav a { position: relative; transition: color var(--fast) var(--ease); }
 nav a::after {
@@ -169,11 +169,11 @@ nav a:hover::after { transform: scaleX(1); }
 .hero-line {
   position: relative;
   z-index: 1;
-  margin: 74px 0 0;
-  font-size: clamp(21px, 2vw, 34px);
+  margin: 70px 0 0;
+  font-size: clamp(20px, 1.9vw, 32px);
   line-height: 1;
   letter-spacing: -0.035em;
-  font-weight: 420;
+  font-weight: 440;
   transition-delay: 180ms;
 }
 .hero-rule {
@@ -204,33 +204,33 @@ nav a:hover::after { transform: scaleX(1); }
 }
 
 .statement-section { 
-  padding: 170px 0 190px; 
+  padding: 176px 0 196px; 
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(420px, 0.7fr);
-  gap: 86px;
+  grid-template-columns: minmax(0, 1fr) minmax(430px, 0.72fr);
+  gap: 92px;
   align-items: start;
 }
 .statement-head { position: sticky; top: 118px; }
 h1 {
-  margin: 56px 0 0;
+  margin: 54px 0 0;
   max-width: 1080px;
-  font-size: clamp(58px, 7.8vw, 132px);
-  line-height: 0.94;
-  letter-spacing: -0.09em;
+  font-size: clamp(54px, 7.2vw, 120px);
+  line-height: 0.96;
+  letter-spacing: -0.085em;
   font-weight: 510;
   word-break: keep-all;
 }
 .standard-principles {
-  margin-top: 8px;
+  margin-top: 2px;
   border-top: 1px solid var(--line);
 }
 .standard-item {
   position: relative;
   display: grid;
-  grid-template-columns: 54px 1fr;
-  column-gap: 32px;
+  grid-template-columns: 58px 1fr;
+  column-gap: 34px;
   row-gap: 18px;
-  padding: 38px 0 40px;
+  padding: 40px 0 42px;
   border-bottom: 1px solid var(--line);
 }
 .standard-item::after {
@@ -255,16 +255,16 @@ h1 {
 }
 .standard-item strong {
   display: block;
-  font-size: clamp(26px, 3.2vw, 48px);
+  font-size: clamp(27px, 3.35vw, 50px);
   line-height: 1;
-  letter-spacing: -0.055em;
+  letter-spacing: -0.058em;
   font-weight: 510;
 }
 .standard-item p {
   margin: 0;
   color: #4b4741;
-  font-size: clamp(16px, 1.35vw, 20px);
-  line-height: 1.65;
+  font-size: clamp(16px, 1.25vw, 19px);
+  line-height: 1.68;
   word-break: keep-all;
 }
 .statement-copy {
@@ -418,15 +418,21 @@ h2 {
   word-break: keep-all;
 }
 
-.field-section { padding: 180px 0 190px; }
-.field-lines { margin-top: 74px; border-top: 1px solid var(--line); overflow: hidden; }
+.field-section { padding: 176px 0 190px; }
+.field-head {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.35fr) minmax(0, 0.65fr);
+  gap: 80px;
+  align-items: start;
+}
+.field-lines { margin-top: 86px; border-top: 1px solid var(--line); overflow: hidden; }
 .field-lines[data-reveal] { transform: none; }
 .field-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(260px, 0.35fr);
   gap: 36px;
   align-items: end;
-  padding: 32px 0 36px;
+  padding: 34px 0 38px;
   border-bottom: 1px solid var(--line);
   transform: translate3d(-26px, 0, 0);
   opacity: 0;
@@ -441,23 +447,24 @@ h2 {
 .field-lines.is-visible .field-row:nth-child(3) { transition-delay: 220ms; }
 .field-row:hover { padding-left: 18px; border-bottom-color: rgba(17,17,17,0.28); }
 .field-row strong {
-  font-size: clamp(58px, 9.5vw, 158px);
+  font-size: clamp(58px, 9.2vw, 150px);
   line-height: 0.92;
-  letter-spacing: -0.09em;
+  letter-spacing: -0.088em;
   font-weight: 510;
 }
 .field-row span {
-  padding-bottom: 12px;
+  padding-bottom: 13px;
   color: var(--muted);
-  font-size: clamp(14px, 1.35vw, 18px);
-  letter-spacing: 0.01em;
+  font-size: clamp(14px, 1.32vw, 18px);
+  letter-spacing: 0.015em;
 }
 .field-note {
-  max-width: 700px;
-  margin: 64px 0 0 auto;
+  max-width: 760px;
+  margin: 0;
   color: #393631;
-  font-size: clamp(19px, 2vw, 29px);
-  line-height: 1.62;
+  font-size: clamp(22px, 2.65vw, 43px);
+  line-height: 1.38;
+  letter-spacing: -0.055em;
   word-break: keep-all;
 }
 
@@ -501,7 +508,7 @@ h2 {
 .contact-section .section-kicker { color: var(--dark-muted); }
 .contact-section h2 { margin-top: 52px; max-width: 1100px; position: relative; z-index: 1; }
 .contact-links {
-  margin-top: 84px;
+  margin-top: 82px;
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
@@ -635,7 +642,8 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
   .work-head { grid-template-columns: 1fr; gap: 42px; }
   .work-list { margin-top: 68px; }
   .work-item { grid-template-columns: 1fr; gap: 24px; min-height: auto; padding: 38px 0; }
-  .field-lines { margin-top: 54px; }
+  .field-head { grid-template-columns: 1fr; gap: 36px; }
+  .field-lines { margin-top: 62px; }
   .field-row { grid-template-columns: 1fr; gap: 16px; padding: 26px 0 30px; }
   .field-row span { padding-bottom: 0; }
   .field-row:hover { padding-left: 0; }

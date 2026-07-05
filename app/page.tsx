@@ -18,6 +18,29 @@ const process = [
   },
 ]
 
+const standards = [
+  {
+    number: '01',
+    title: 'Execution First.',
+    text: '좋은 말보다 정확한 실행을 우선합니다.',
+  },
+  {
+    number: '02',
+    title: 'Clear Structure.',
+    text: '복잡한 일을 명확한 구조로 정리합니다.',
+  },
+  {
+    number: '03',
+    title: 'Built to Last.',
+    text: '일시적인 성과보다 오래가는 방향을 봅니다.',
+  },
+  {
+    number: '04',
+    title: 'Details Build Trust.',
+    text: '작은 디테일이 결국 신뢰를 만듭니다.',
+  },
+]
+
 const fields = [
   { title: 'Marketing', text: 'Performance · Content · Brand' },
   { title: 'Commerce', text: 'Strategy · Operation · Growth' },
@@ -54,29 +77,16 @@ export default function Home() {
       <section id="standard" className="statement-section" data-section="light">
         <div className="statement-head">
           <p className="section-kicker" data-reveal>01 / Standard</p>
-          <h1 data-reveal>좋은 결과는<br />기준에서<br />시작됩니다.</h1>
+          <h1 data-reveal>기준이<br />선명해야<br />결과도<br />흔들리지<br />않습니다.</h1>
         </div>
         <div className="standard-principles" data-reveal>
-          <article className="standard-item">
-            <span>01</span>
-            <strong>Execution First.</strong>
-            <p>말보다 실행을 우선합니다.</p>
-          </article>
-          <article className="standard-item">
-            <span>02</span>
-            <strong>Clarity Over Complexity.</strong>
-            <p>복잡함보다 명확함을 선택합니다.</p>
-          </article>
-          <article className="standard-item">
-            <span>03</span>
-            <strong>Built to Last.</strong>
-            <p>오래가는 결과를 만듭니다.</p>
-          </article>
-          <article className="standard-item">
-            <span>04</span>
-            <strong>Details Matter.</strong>
-            <p>작은 디테일이 신뢰를 만듭니다.</p>
-          </article>
+          {standards.map((item) => (
+            <article className="standard-item" key={item.title}>
+              <span>{item.number}</span>
+              <strong>{item.title}</strong>
+              <p>{item.text}</p>
+            </article>
+          ))}
         </div>
       </section>
 
@@ -97,7 +107,12 @@ export default function Home() {
       </section>
 
       <section className="field-section" data-section="light">
-        <p className="section-kicker" data-reveal>03 / Fields</p>
+        <div className="field-head">
+          <p className="section-kicker" data-reveal>03 / Our Expertise</p>
+          <p className="field-note" data-reveal>
+            Designed to work independently.<br />Built to work together.
+          </p>
+        </div>
         <div className="field-lines" data-reveal>
           {fields.map((field) => (
             <div key={field.title} className="field-row">
@@ -106,9 +121,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="field-note" data-reveal>
-          Designed to work independently.<br />Built to work together.
-        </p>
       </section>
 
       <section id="contact" className="contact-section is-dark-section" data-section="dark">
