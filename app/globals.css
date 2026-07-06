@@ -618,16 +618,20 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
   .scroll-progress { display: none; }
   .site-header { height: 66px; padding: 0 22px; }
   .brand img { height: 16px; width: auto; max-width: none; }
-  nav { gap: 18px; font-size: 11px; }
-  nav a:nth-child(2) { display: none; }
+  nav { gap: 16px; font-size: 10.5px; letter-spacing: 0.03em; }
   .hero { padding: 105px 22px 62px; }
   .hero-mark img { width: min(420px, 82vw); }
   .hero-line { margin-top: 56px; }
   .statement-section,
-  .work-section,
   .field-section,
-  .contact-section,
   footer { width: min(100% - 44px, 1220px); }
+  .work-section,
+  .contact-section {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
   .statement-section, .field-section { padding: 116px 0; }
   .statement-section { display: block; }
   .statement-head { position: static; }
