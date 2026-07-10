@@ -38,3 +38,12 @@ git push
 - Preserved the original symbol ratio by placing the mark proportionally inside a square canvas instead of forcing the horizontal PNG into a square slot.
 - Added favicon.ico, 16/32/48px favicon PNGs, Apple touch icon, and app icons.
 - Updated Next.js metadata to reference the new square icon assets.
+
+## v2.4 Header refinement
+- Refined fixed header proportions for a cleaner, more premium appearance.
+- Reduced header height and adjusted left/right spacing on desktop and mobile.
+- Reduced header logo height while preserving the official logo ratio.
+- Added optical alignment and hover opacity for the header brand mark.
+- Softened header backdrop and border for both light and dark sections.
+- Tuned navigation spacing, letter spacing, and baseline alignment.
+- Verified production build with `npm run build`.

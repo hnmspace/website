@@ -90,25 +90,43 @@ main { z-index: 1; }
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 50;
-  height: 74px;
-  padding: 0 48px;
+  height: 68px;
+  padding: 0 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: var(--text);
-  background: rgba(248, 248, 246, 0.78);
-  backdrop-filter: blur(24px);
-  border-bottom: 1px solid rgba(17, 17, 17, 0.055);
+  background: rgba(248, 248, 246, 0.68);
+  backdrop-filter: blur(22px) saturate(1.08);
+  -webkit-backdrop-filter: blur(22px) saturate(1.08);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.045);
   transition: background var(--base) var(--ease), color var(--base) var(--ease), border-color var(--base) var(--ease);
 }
 .site-header.is-dark {
   color: #fff;
-  background: rgba(15, 15, 14, 0.72);
-  border-bottom-color: rgba(255,255,255,0.08);
+  background: rgba(15, 15, 14, 0.64);
+  border-bottom-color: rgba(255,255,255,0.07);
 }
-.brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
-.brand img { display: block; height: 18px; width: auto; max-width: none; aspect-ratio: 1275 / 185; object-fit: contain; transition: filter var(--base) var(--ease), opacity var(--base) var(--ease); }
-.site-header.is-dark .brand img { filter: invert(1); opacity: 0.94; }
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  line-height: 0;
+  opacity: 0.92;
+  transform: translateY(-0.5px);
+  transition: opacity var(--fast) var(--ease);
+}
+.brand:hover { opacity: 1; }
+.brand img {
+  display: block;
+  height: 15.5px;
+  width: auto;
+  max-width: none;
+  aspect-ratio: 1275 / 185;
+  object-fit: contain;
+  transition: filter var(--base) var(--ease), opacity var(--base) var(--ease);
+}
+.site-header.is-dark .brand img { filter: invert(1); opacity: 0.92; }
 
 /* Official HNM logo assets must keep their original ratio. */
 .brand img,
@@ -118,7 +136,16 @@ footer img {
   flex: 0 0 auto;
 }
 
-nav { display: flex; align-items: center; gap: 32px; font-size: 12px; color: var(--muted); letter-spacing: 0.04em; white-space: nowrap; }
+nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 11.5px;
+  line-height: 1;
+  color: var(--muted);
+  letter-spacing: 0.075em;
+  white-space: nowrap;
+}
 .site-header.is-dark nav { color: rgba(255,255,255,0.58); }
 nav a { position: relative; transition: color var(--fast) var(--ease); }
 nav a::after {
@@ -616,9 +643,10 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
 
 @media (max-width: 920px) {
   .scroll-progress { display: none; }
-  .site-header { height: 66px; padding: 0 22px; }
-  .brand img { height: 16px; width: auto; max-width: none; }
-  nav { gap: 12px; font-size: 10.5px; letter-spacing: 0.035em; }
+  .site-header { height: 62px; padding: 0 20px; }
+  .brand { transform: translateY(-0.25px); }
+  .brand img { height: 14px; width: auto; max-width: none; }
+  nav { gap: 14px; font-size: 10.5px; letter-spacing: 0.045em; }
   .hero { padding: 105px 22px 62px; }
   .hero-mark img { width: min(390px, 80vw); }
   .hero-line { margin-top: 56px; }
@@ -657,6 +685,13 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
   footer { align-items: flex-start; flex-direction: column; gap: 22px; }
   .scroll-indicator { right: 22px; bottom: 34px; }
 }
+
+@media (max-width: 520px) {
+  .site-header { height: 58px; padding: 0 16px; }
+  .brand img { height: 13px; }
+  nav { gap: 10px; font-size: 9.6px; letter-spacing: 0.03em; }
+}
+
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
