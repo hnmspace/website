@@ -26,3 +26,9 @@ git add .
 git commit -m "Apply Built to Endure brand copy"
 git push
 ```
+
+
+## v2.1 one-line heading adjustment
+- Changed Business headline to `Beyond categories.` on one line.
+- Simplified Contact headline to `New connections.` on one line.
+- Added desktop heading rules to prevent unintended line breaks while keeping mobile responsive.

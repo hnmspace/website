@@ -84,7 +84,7 @@ export default function Home() {
       <section id="business" className="work-section is-dark-section" data-section="dark">
         <div className="work-head">
           <p className="section-kicker" data-reveal>02 / Our Businesses</p>
-          <h2 data-reveal>Beyond<br />categories.</h2>
+          <h2 data-reveal>Beyond categories.</h2>
         </div>
         <div className="work-list">
           {businesses.map((item) => (
@@ -114,7 +114,7 @@ export default function Home() {
 
       <section id="contact" className="contact-section is-dark-section" data-section="dark">
         <p className="section-kicker" data-reveal>04 / Contact</p>
-        <h2 data-reveal>New connections.<br />Thoughtful conversations.</h2>
+        <h2 data-reveal>New connections.</h2>
         <div className="contact-links" data-reveal>
           <a href="mailto:henry@hnmspace.com"><span>henry@hnmspace.com</span></a>
           <a href="https://hnmspace.com"><span>hnmspace.com</span></a>
