@@ -4,24 +4,24 @@ const businesses = [
   {
     number: '01',
     title: 'Marketing',
-    text: '브랜드와 시장을 이해하고, 전략과 콘텐츠를 통해 지속 가능한 성장을 설계합니다.',
+    text: '시장, 브랜드, 커뮤니케이션의 흐름을 다룹니다.',
   },
   {
     number: '02',
     title: 'Commerce',
-    text: '상품의 기획부터 운영과 성장까지, 커머스 비즈니스의 전 과정을 구축합니다.',
+    text: '상품, 운영, 판매 경험이 이어지는 구조를 다룹니다.',
   },
   {
     number: '03',
     title: 'Distribution',
-    text: '시장과 상품을 연결하는 유통 구조를 만들고, 새로운 기회와 확장을 이어갑니다.',
+    text: '상품과 채널, 시장을 연결하는 흐름을 다룹니다.',
   },
 ]
 
 const operatingPrinciples = [
-  { title: 'Independent', text: '각 사업은 고유한 전문성과 독립성을 바탕으로 운영됩니다.' },
-  { title: 'Connected', text: '그룹의 기준과 역량을 공유하며 유기적으로 연결됩니다.' },
-  { title: 'Long-term', text: '단기적인 성과보다 지속 가능한 가치와 성장을 지향합니다.' },
+  { title: 'Intent', text: '모든 사업은 분명한 의도와 기준 위에서 시작됩니다.' },
+  { title: 'Discipline', text: '속도보다 완성도, 확장보다 지속성을 우선합니다.' },
+  { title: 'Structure', text: '각 사업은 독립적으로 움직이며 하나의 구조 안에서 연결됩니다.' },
 ]
 
 export default function Home() {
@@ -38,6 +38,7 @@ export default function Home() {
         <nav aria-label="주요 메뉴">
           <a href="#about">About</a>
           <a href="#business">Business</a>
+          <a href="#standard">Standard</a>
           <a href="#contact">Contact</a>
         </nav>
       </header>
@@ -46,44 +47,44 @@ export default function Home() {
         <div className="hero-mark" data-reveal="hero">
           <img src="/hnm-logo-primary-black.png" alt="HNM SPACE" />
         </div>
-        <p className="hero-line" data-reveal>Marketing. Commerce. Distribution.</p>
+        <p className="hero-line" data-reveal>Built to Endure.</p>
         <div className="hero-rule" data-line aria-hidden="true" />
         <div className="scroll-indicator" aria-hidden="true"><span>Scroll</span><i /></div>
       </section>
 
       <section id="about" className="statement-section" data-section="light">
         <div className="statement-head">
-          <p className="section-kicker" data-reveal>01 / Who we are</p>
-          <h1 data-reveal>서로 다른 사업을<br />하나의 기준으로<br />운영합니다.</h1>
+          <p className="section-kicker" data-reveal>01 / About HNM SPACE</p>
+          <h1 data-reveal>Long-term<br />by design.</h1>
         </div>
         <div className="standard-principles" data-reveal>
           <article className="standard-item">
             <span>01</span>
-            <strong>Long-term Perspective.</strong>
-            <p>지속 가능한 성장을 기준으로 판단합니다.</p>
+            <strong>Perspective.</strong>
+            <p>단기적 흐름보다 오래 지속될 방향을 봅니다.</p>
           </article>
           <article className="standard-item">
             <span>02</span>
-            <strong>Independent Operation.</strong>
-            <p>각 사업의 전문성과 독립성을 존중합니다.</p>
+            <strong>Independence.</strong>
+            <p>각 사업은 고유한 전문성과 판단으로 운영됩니다.</p>
           </article>
           <article className="standard-item">
             <span>03</span>
-            <strong>Shared Standards.</strong>
-            <p>하나의 기준과 방향 아래 움직입니다.</p>
+            <strong>Standard.</strong>
+            <p>서로 다른 사업은 하나의 기준으로 연결됩니다.</p>
           </article>
           <article className="standard-item">
             <span>04</span>
-            <strong>Meaningful Growth.</strong>
-            <p>규모보다 본질적인 성장을 추구합니다.</p>
+            <strong>Endurance.</strong>
+            <p>오래 남는 가치를 중심에 둡니다.</p>
           </article>
         </div>
       </section>
 
       <section id="business" className="work-section is-dark-section" data-section="dark">
         <div className="work-head">
-          <p className="section-kicker" data-reveal>02 / Our businesses</p>
-          <h2 data-reveal>Three businesses.<br />One direction.</h2>
+          <p className="section-kicker" data-reveal>02 / Our Businesses</p>
+          <h2 data-reveal>Beyond<br />categories.</h2>
         </div>
         <div className="work-list">
           {businesses.map((item) => (
@@ -96,8 +97,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="field-section" data-section="light">
-        <p className="section-kicker" data-reveal>03 / How we operate</p>
+      <section id="standard" className="field-section" data-section="light">
+        <p className="section-kicker" data-reveal>03 / Our Standard</p>
         <div className="field-lines" data-reveal>
           {operatingPrinciples.map((principle) => (
             <div key={principle.title} className="field-row">
@@ -107,13 +108,13 @@ export default function Home() {
           ))}
         </div>
         <p className="field-note" data-reveal>
-          Independent businesses.<br />One shared standard.
+          Quiet confidence.<br />Clear standards.
         </p>
       </section>
 
       <section id="contact" className="contact-section is-dark-section" data-section="dark">
         <p className="section-kicker" data-reveal>04 / Contact</p>
-        <h2 data-reveal>HNM SPACE에 관한 문의.</h2>
+        <h2 data-reveal>New connections.<br />Thoughtful conversations.</h2>
         <div className="contact-links" data-reveal>
           <a href="mailto:henry@hnmspace.com"><span>henry@hnmspace.com</span></a>
           <a href="https://hnmspace.com"><span>hnmspace.com</span></a>

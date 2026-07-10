@@ -363,6 +363,7 @@ h1 {
 }
 h2 {
   margin: 0;
+  word-break: keep-all;
   font-size: clamp(60px, 8.8vw, 148px);
   line-height: 0.9;
   letter-spacing: -0.09em;
@@ -612,7 +613,7 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
   .scroll-progress { display: none; }
   .site-header { height: 66px; padding: 0 22px; }
   .brand img { height: 16px; width: auto; max-width: none; }
-  nav { gap: 14px; font-size: 10.5px; letter-spacing: 0.035em; }
+  nav { gap: 12px; font-size: 10.5px; letter-spacing: 0.035em; }
   .hero { padding: 105px 22px 62px; }
   .hero-mark img { width: min(390px, 80vw); }
   .hero-line { margin-top: 56px; }
