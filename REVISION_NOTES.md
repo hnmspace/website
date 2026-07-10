@@ -32,3 +32,9 @@ git push
 - Changed Business headline to `Beyond categories.` on one line.
 - Simplified Contact headline to `New connections.` on one line.
 - Added desktop heading rules to prevent unintended line breaks while keeping mobile responsive.
+
+## v2.2 favicon / symbol refinement
+- Rebuilt the browser tab icon from the supplied HNM symbol as square favicon assets.
+- Preserved the original symbol ratio by placing the mark proportionally inside a square canvas instead of forcing the horizontal PNG into a square slot.
+- Added favicon.ico, 16/32/48px favicon PNGs, Apple touch icon, and app icons.
+- Updated Next.js metadata to reference the new square icon assets.

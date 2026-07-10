@@ -33,7 +33,7 @@ export default function Home() {
 
       <header className="site-header">
         <a className="brand" href="#top" aria-label="HNM SPACE 홈">
-          <img src="/hnm-logo-horizontal-black.png" alt="HNM SPACE" />
+          <img src="/hnm-logo-horizontal-black.png" alt="HNM SPACE" width={1275} height={185} />
         </a>
         <nav aria-label="주요 메뉴">
           <a href="#about">About</a>
@@ -45,7 +45,7 @@ export default function Home() {
 
       <section id="top" className="hero" data-section="light">
         <div className="hero-mark" data-reveal="hero">
-          <img src="/hnm-logo-primary-black.png" alt="HNM SPACE" />
+          <img src="/hnm-logo-primary-black.png" alt="HNM SPACE" width={746} height={287} />
         </div>
         <p className="hero-line" data-reveal>Built to Endure.</p>
         <div className="hero-rule" data-line aria-hidden="true" />
@@ -122,7 +122,7 @@ export default function Home() {
       </section>
 
       <footer data-section="light">
-        <img src="/hnm-symbol-black.png" alt="HNM SPACE 심볼" />
+        <img src="/hnm-symbol-black.png" alt="HNM SPACE 심볼" width={746} height={183} />
         <span>© 2026 HNM SPACE</span>
       </footer>
     </main>
