@@ -32,8 +32,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/hnm-logo-primary-black.png',
-        alt: 'HNM SPACE',
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'HNM SPACE | Built to Endure',
       },
     ],
   },
@@ -41,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'HNM SPACE | Built to Endure',
     description: 'Built to Endure. Marketing. Commerce. Distribution.',
-    images: ['/hnm-logo-primary-black.png'],
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,

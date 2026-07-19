@@ -47,3 +47,13 @@ git push
 - Softened header backdrop and border for both light and dark sections.
 - Tuned navigation spacing, letter spacing, and baseline alignment.
 - Verified production build with `npm run build`.
+
+
+## v3 UX / Detail Refinement
+
+- Contact headline changed to `For what comes next.` for a quieter corporate tone.
+- Desktop display headlines refined to preserve intentional one-line layouts.
+- Header spacing, logo scale, typography rhythm, section padding, and hover motion refined.
+- Reveal motion softened with less blur and smaller movement.
+- Mobile typography and contact buttons adjusted for cleaner responsive layouts.
+- Open Graph image added at `/public/og-image.png`.

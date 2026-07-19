@@ -4,24 +4,24 @@ const businesses = [
   {
     number: '01',
     title: 'Marketing',
-    text: '시장, 브랜드, 커뮤니케이션의 흐름을 다룹니다.',
+    text: '시장과 브랜드, 커뮤니케이션이 움직이는 곳.'
   },
   {
     number: '02',
     title: 'Commerce',
-    text: '상품, 운영, 판매 경험이 이어지는 구조를 다룹니다.',
+    text: '상품과 운영, 판매 경험이 만나는 곳.'
   },
   {
     number: '03',
     title: 'Distribution',
-    text: '상품과 채널, 시장을 연결하는 흐름을 다룹니다.',
+    text: '상품과 채널, 시장을 연결하는 곳.'
   },
 ]
 
 const operatingPrinciples = [
-  { title: 'Intent', text: '모든 사업은 분명한 의도와 기준 위에서 시작됩니다.' },
-  { title: 'Discipline', text: '속도보다 완성도, 확장보다 지속성을 우선합니다.' },
-  { title: 'Structure', text: '각 사업은 독립적으로 움직이며 하나의 구조 안에서 연결됩니다.' },
+  { title: 'Intent', text: '명확한 의도에서 시작합니다.' },
+  { title: 'Discipline', text: '오래 지속될 기준을 지킵니다.' },
+  { title: 'Structure', text: '각 사업은 독립적으로, 하나의 구조 안에서 움직입니다.' },
 ]
 
 export default function Home() {
@@ -114,7 +114,7 @@ export default function Home() {
 
       <section id="contact" className="contact-section is-dark-section" data-section="dark">
         <p className="section-kicker" data-reveal>04 / Contact</p>
-        <h2 data-reveal>New connections.</h2>
+        <h2 data-reveal>For what comes next.</h2>
         <div className="contact-links" data-reveal>
           <a href="mailto:henry@hnmspace.com"><span>henry@hnmspace.com</span></a>
           <a href="https://hnmspace.com"><span>hnmspace.com</span></a>
