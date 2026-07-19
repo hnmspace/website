@@ -57,3 +57,12 @@ git push
 - Reveal motion softened with less blur and smaller movement.
 - Mobile typography and contact buttons adjusted for cleaner responsive layouts.
 - Open Graph image added at `/public/og-image.png`.
+
+
+## v4 — Scroll flow, business cards, OG image
+
+- Refined the business section rhythm with a headline block, supporting lead copy, and card-based layout.
+- Reworked business text to differentiate Marketing, Commerce, and Distribution without shifting into service-promotion tone.
+- Added compact scope chips for each business area.
+- Adjusted section padding and reveal motion for a slower, more deliberate scroll flow.
+- Rebuilt `public/og-image.png` with the final slogan and business pillars.

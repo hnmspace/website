@@ -4,17 +4,23 @@ const businesses = [
   {
     number: '01',
     title: 'Marketing',
-    text: '시장과 브랜드, 커뮤니케이션이 움직이는 곳.'
+    label: 'Signal',
+    text: '시장의 움직임을 읽고, 브랜드가 향할 방향을 정리합니다.',
+    points: ['Market', 'Brand', 'Communication'],
   },
   {
     number: '02',
     title: 'Commerce',
-    text: '상품과 운영, 판매 경험이 만나는 곳.'
+    label: 'Experience',
+    text: '상품과 운영, 구매 경험이 하나의 구조로 이어지는 영역입니다.',
+    points: ['Product', 'Operation', 'Experience'],
   },
   {
     number: '03',
     title: 'Distribution',
-    text: '상품과 채널, 시장을 연결하는 곳.'
+    label: 'Reach',
+    text: '상품과 채널, 시장의 접점을 넓히는 기반을 만듭니다.',
+    points: ['Channel', 'Supply', 'Market'],
   },
 ]
 
@@ -84,14 +90,28 @@ export default function Home() {
       <section id="business" className="work-section is-dark-section" data-section="dark">
         <div className="work-head">
           <p className="section-kicker" data-reveal>02 / Our Businesses</p>
-          <h2 data-reveal>Beyond categories.</h2>
+          <div className="work-title-block">
+            <h2 data-reveal>Beyond categories.</h2>
+            <p className="work-lead" data-reveal>
+              Marketing. Commerce. Distribution.<br />
+              서로 다른 영역은 하나의 기준 안에서 움직입니다.
+            </p>
+          </div>
         </div>
-        <div className="work-list">
+        <div className="business-grid">
           {businesses.map((item) => (
-            <article key={item.title} className="work-item" data-reveal>
-              <span>{item.number}</span>
+            <article key={item.title} className="business-card" data-reveal>
+              <div className="business-card-top">
+                <span>{item.number}</span>
+                <em>{item.label}</em>
+              </div>
               <h3>{item.title}</h3>
               <p>{item.text}</p>
+              <ul aria-label={`${item.title} scope`}>
+                {item.points.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>
