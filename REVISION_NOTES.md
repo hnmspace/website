@@ -66,3 +66,13 @@ git push
 - Added compact scope chips for each business area.
 - Adjusted section padding and reveal motion for a slower, more deliberate scroll flow.
 - Rebuilt `public/og-image.png` with the final slogan and business pillars.
+
+
+## v5 — Quieter business system and declarative copy
+
+- Reduced the visual weight of the Business cards.
+- Rewrote business copy as declarative English statements with brief Korean support lines.
+- Simplified the Business section lead to `One standard.`
+- Shortened Standard principle descriptions.
+- Tuned mobile card height, spacing, and type hierarchy.
+- Rebuilt `public/og-image.png` as a quieter black-based sharing image.

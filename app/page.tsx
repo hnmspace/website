@@ -5,29 +5,32 @@ const businesses = [
     number: '01',
     title: 'Marketing',
     label: 'Signal',
-    text: '시장의 움직임을 읽고, 브랜드가 향할 방향을 정리합니다.',
+    headline: <>Market signal.<br />Brand direction.</>,
+    text: '시장과 브랜드의 접점을 다룹니다.',
     points: ['Market', 'Brand', 'Communication'],
   },
   {
     number: '02',
     title: 'Commerce',
     label: 'Experience',
-    text: '상품과 운영, 구매 경험이 하나의 구조로 이어지는 영역입니다.',
+    headline: <>Product structure.<br />Operating rhythm.</>,
+    text: '상품이 판매되는 구조를 운영합니다.',
     points: ['Product', 'Operation', 'Experience'],
   },
   {
     number: '03',
     title: 'Distribution',
     label: 'Reach',
-    text: '상품과 채널, 시장의 접점을 넓히는 기반을 만듭니다.',
+    headline: <>Channel reach.<br />Market access.</>,
+    text: '상품이 시장에 닿는 경로를 만듭니다.',
     points: ['Channel', 'Supply', 'Market'],
   },
 ]
 
 const operatingPrinciples = [
-  { title: 'Intent', text: '명확한 의도에서 시작합니다.' },
-  { title: 'Discipline', text: '오래 지속될 기준을 지킵니다.' },
-  { title: 'Structure', text: '각 사업은 독립적으로, 하나의 구조 안에서 움직입니다.' },
+  { title: 'Intent', text: 'Clear from the beginning.' },
+  { title: 'Discipline', text: 'Standards that last.' },
+  { title: 'Structure', text: 'Independent, aligned.' },
 ]
 
 export default function Home() {
@@ -94,7 +97,7 @@ export default function Home() {
             <h2 data-reveal>Beyond categories.</h2>
             <p className="work-lead" data-reveal>
               Marketing. Commerce. Distribution.<br />
-              서로 다른 영역은 하나의 기준 안에서 움직입니다.
+              One standard.
             </p>
           </div>
         </div>
@@ -106,6 +109,7 @@ export default function Home() {
                 <em>{item.label}</em>
               </div>
               <h3>{item.title}</h3>
+              <strong className="business-card-headline">{item.headline}</strong>
               <p>{item.text}</p>
               <ul aria-label={`${item.title} scope`}>
                 {item.points.map((point) => (
