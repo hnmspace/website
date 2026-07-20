@@ -224,6 +224,14 @@ nav a:hover::after { transform: scaleX(1); }
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
+
+#about,
+#business,
+#standard,
+#contact {
+  scroll-margin-top: 86px;
+}
+
 .statement-section,
 .work-section,
 .field-section,
@@ -476,7 +484,7 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: rgba(255,255,255,0.47);
+  color: rgba(255,255,255,0.54);
   font-size: 10.5px;
   line-height: 1;
   letter-spacing: 0.13em;
@@ -499,7 +507,7 @@ h2 {
 .business-card-headline {
   display: block;
   margin: 24px 0 0;
-  color: rgba(255,255,255,0.84);
+  color: rgba(255,255,255,0.9);
   font-size: clamp(21px, 1.9vw, 30px);
   line-height: 1.08;
   letter-spacing: -0.058em;
@@ -752,7 +760,7 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
   .site-header { height: 62px; padding: 0 22px; }
   .brand { transform: translateY(-0.25px); }
   .brand img { height: 14px; width: auto; max-width: none; }
-  nav { gap: 14px; font-size: 10.5px; letter-spacing: 0.045em; }
+  nav { gap: 12px; font-size: 10.2px; letter-spacing: 0.035em; }
   .hero { padding: 105px 22px 62px; }
   .hero-mark img { width: min(390px, 80vw); }
   .hero-line { margin-top: 56px; }
@@ -761,7 +769,8 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
   .field-section,
   .contact-section,
   footer { width: min(100% - 44px, 1240px); }
-  .statement-section, .field-section { padding: 116px 0; }
+  .statement-section { padding: 116px 0; }
+  .field-section { padding: 132px 0 110px; }
   .statement-section { display: block; }
   .statement-head { position: static; }
   .standard-principles { margin-top: 68px; }
@@ -788,11 +797,11 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
     .business-card ul { margin-top: 28px; gap: 6px; }
   .business-card li { font-size: 10px; padding: 6px 8px 7px; }
   .business-card::after { left: 20px; right: 20px; bottom: 64px; }
-  .field-lines { margin-top: 54px; }
-  .field-row { grid-template-columns: 1fr; gap: 16px; padding: 26px 0 30px; }
+  .field-lines { margin-top: 62px; }
+  .field-row { grid-template-columns: 1fr; gap: 12px; padding: 24px 0 27px; transform: translate3d(0, 14px, 0); }
   .field-row span { padding-bottom: 0; }
   .field-row:hover { padding-left: 0; }
-  .field-note { margin-left: 0; }
+  .field-note { margin-left: 0; margin-top: 46px; }
   .contact-links { flex-direction: column; gap: 10px; }
   .contact-links a { width: 100%; text-align: center; }
   footer { align-items: flex-start; flex-direction: column; gap: 22px; }
@@ -802,7 +811,20 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
 @media (max-width: 520px) {
   .site-header { height: 58px; padding: 0 16px; }
   .brand img { height: 13px; }
-  nav { gap: 10px; font-size: 9.6px; letter-spacing: 0.03em; }
+  nav { gap: 8px; font-size: 9.4px; letter-spacing: 0.02em; }
+}
+
+
+@media (max-width: 520px) {
+  #about,
+  #business,
+  #standard,
+  #contact {
+    scroll-margin-top: 74px;
+  }
+  .field-row strong {
+    font-size: clamp(46px, 16.5vw, 72px);
+  }
 }
 
 

@@ -86,3 +86,12 @@ git push
 - Compacted the Standard section rows and brought descriptions closer.
 - Removed blur from Contact links and increased button border readability.
 - Rebuilt OG image with a larger logo, no small decorative symbol, and shorter preview description.
+
+
+## v6.1 — Mobile rhythm and business readability
+
+- Slightly strengthened Business card text contrast on desktop.
+- Reduced mobile Business card height, internal spacing, heading size, and tag spacing.
+- Added section scroll margins so anchored sections do not sit too close to the fixed header.
+- Increased mobile Standard top breathing room and calmed first-row reveal movement.
+- Tightened mobile navigation spacing slightly.
