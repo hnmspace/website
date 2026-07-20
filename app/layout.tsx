@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: 'HNM SPACE | Built to Endure',
     template: '%s | HNM SPACE',
   },
-  description: 'HNM SPACE는 마케팅, 커머스, 유통을 기반으로 장기적 관점의 사업 구조를 만들어가는 기업 그룹입니다.',
+  description: 'Marketing. Commerce. Distribution.',
   keywords: ['HNM SPACE', '에이치엔엠스페이스', 'Built to Endure', '마케팅', '커머스', '유통', '기업 그룹'],
   alternates: {
     canonical: '/',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'HNM SPACE | Built to Endure',
-    description: 'Built to Endure. Marketing. Commerce. Distribution.',
+    description: 'Marketing. Commerce. Distribution.',
     url: '/',
     siteName: 'HNM SPACE',
     locale: 'ko_KR',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'HNM SPACE | Built to Endure',
-    description: 'Built to Endure. Marketing. Commerce. Distribution.',
+    description: 'Marketing. Commerce. Distribution.',
     images: ['/og-image.png'],
   },
   robots: {

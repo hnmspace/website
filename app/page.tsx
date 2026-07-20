@@ -6,7 +6,6 @@ const businesses = [
     title: 'Marketing',
     label: 'Signal',
     headline: <>Market signal.<br />Brand direction.</>,
-    text: '시장과 브랜드의 접점을 다룹니다.',
     points: ['Market', 'Brand', 'Communication'],
   },
   {
@@ -14,7 +13,6 @@ const businesses = [
     title: 'Commerce',
     label: 'Experience',
     headline: <>Product structure.<br />Operating rhythm.</>,
-    text: '상품이 판매되는 구조를 운영합니다.',
     points: ['Product', 'Operation', 'Experience'],
   },
   {
@@ -22,7 +20,6 @@ const businesses = [
     title: 'Distribution',
     label: 'Reach',
     headline: <>Channel reach.<br />Market access.</>,
-    text: '상품이 시장에 닿는 경로를 만듭니다.',
     points: ['Channel', 'Supply', 'Market'],
   },
 ]
@@ -110,7 +107,6 @@ export default function Home() {
               </div>
               <h3>{item.title}</h3>
               <strong className="business-card-headline">{item.headline}</strong>
-              <p>{item.text}</p>
               <ul aria-label={`${item.title} scope`}>
                 {item.points.map((point) => (
                   <li key={point}>{point}</li>

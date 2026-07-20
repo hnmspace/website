@@ -240,11 +240,11 @@ nav a:hover::after { transform: scaleX(1); }
   gap: 92px;
   align-items: start;
 }
-.statement-head { position: sticky; top: 118px; }
+.statement-head { position: sticky; top: 104px; }
 h1 {
-  margin: 56px 0 0;
+  margin: 48px 0 0;
   max-width: 1080px;
-  font-size: clamp(58px, 7.6vw, 126px);
+  font-size: clamp(64px, 8.2vw, 138px);
   line-height: 0.94;
   letter-spacing: -0.09em;
   font-weight: 510;
@@ -418,7 +418,7 @@ h2 {
   word-break: keep-all;
 }
 .business-grid {
-  margin-top: 96px;
+  margin-top: 88px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
@@ -426,12 +426,12 @@ h2 {
   z-index: 1;
 }
 .business-card {
-  min-height: 374px;
+  min-height: 330px;
   display: flex;
   flex-direction: column;
-  padding: 24px 24px 25px;
-  border: 1px solid rgba(255,255,255,0.105);
-  background: rgba(255,255,255,0.012);
+  padding: 22px 22px 24px;
+  border: 1px solid rgba(255,255,255,0.085);
+  background: rgba(255,255,255,0.008);
   position: relative;
   overflow: hidden;
   transition:
@@ -455,7 +455,7 @@ h2 {
   position: absolute;
   left: 24px;
   right: 24px;
-  bottom: 72px;
+  bottom: 66px;
   height: 1px;
   background: rgba(255,255,255,0.105);
   transform: scaleX(0);
@@ -467,9 +467,9 @@ h2 {
 .business-card:nth-child(2) { transition-delay: 80ms; }
 .business-card:nth-child(3) { transition-delay: 160ms; }
 .business-card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
   border-color: rgba(255,255,255,0.2);
-  background: rgba(255,255,255,0.018);
+  background: rgba(255,255,255,0.014);
 }
 .business-card:hover::before { opacity: 1; }
 .business-card-top {
@@ -498,7 +498,7 @@ h2 {
 }
 .business-card-headline {
   display: block;
-  margin: 28px 0 0;
+  margin: 24px 0 0;
   color: rgba(255,255,255,0.84);
   font-size: clamp(21px, 1.9vw, 30px);
   line-height: 1.08;
@@ -507,20 +507,10 @@ h2 {
   position: relative;
   z-index: 1;
 }
-.business-card p {
-  margin: 18px 0 0;
-  color: rgba(255,255,255,0.58);
-  font-size: clamp(14px, 1.02vw, 16px);
-  line-height: 1.64;
-  letter-spacing: -0.035em;
-  word-break: keep-all;
-  position: relative;
-  z-index: 1;
-}
 .business-card ul {
   list-style: none;
   padding: 0;
-  margin: 36px 0 0;
+  margin: 34px 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
@@ -529,7 +519,7 @@ h2 {
 }
 .business-card li {
   padding: 7px 9px 8px;
-  border: 1px solid rgba(255,255,255,0.105);
+  border: 1px solid rgba(255,255,255,0.085);
   color: rgba(255,255,255,0.52);
   font-size: 10.5px;
   line-height: 1;
@@ -537,15 +527,15 @@ h2 {
 }
 
 
-.field-section { padding: 184px 0 196px; }
+.field-section { padding: 168px 0 178px; }
 .field-lines { margin-top: 74px; border-top: 1px solid var(--line); overflow: hidden; }
 .field-lines[data-reveal] { transform: none; }
 .field-row {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.35fr);
-  gap: 36px;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.42fr);
+  gap: 30px;
   align-items: end;
-  padding: 30px 0 34px;
+  padding: 24px 0 28px;
   border-bottom: 1px solid var(--line);
   transform: translate3d(-26px, 0, 0);
   opacity: 0;
@@ -560,7 +550,7 @@ h2 {
 .field-lines.is-visible .field-row:nth-child(3) { transition-delay: 220ms; }
 .field-row:hover { padding-left: 12px; border-bottom-color: rgba(17,17,17,0.28); }
 .field-row strong {
-  font-size: clamp(56px, 9vw, 148px);
+  font-size: clamp(52px, 8.2vw, 132px);
   line-height: 0.92;
   letter-spacing: -0.09em;
   font-weight: 510;
@@ -573,7 +563,7 @@ h2 {
 }
 .field-note {
   max-width: 700px;
-  margin: 64px 0 0 auto;
+  margin: 52px 0 0 auto;
   color: #393631;
   font-size: clamp(19px, 2vw, 29px);
   line-height: 1.62;
@@ -627,6 +617,16 @@ h2 {
   position: relative;
   z-index: 1;
 }
+
+.contact-links[data-reveal] {
+  filter: none;
+  transform: translate3d(0, 14px, 0);
+  transition-duration: 760ms;
+}
+.contact-links[data-reveal].is-visible {
+  filter: none;
+}
+
 .contact-links {
   margin-top: 76px;
   display: flex;
@@ -636,7 +636,7 @@ h2 {
   z-index: 1;
 }
 .contact-links a {
-  border: 1px solid currentColor;
+  border: 1px solid rgba(255,255,255,0.72);
   padding: 17px 22px 18px;
   font-size: clamp(16px, 1.45vw, 22px);
   letter-spacing: -0.035em;
@@ -737,11 +737,10 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
 
 @media (min-width: 921px) and (max-width: 1120px) {
   .business-grid { gap: 12px; }
-  .business-card { min-height: 352px; padding: 22px; }
+  .business-card { min-height: 312px; padding: 22px; }
   .business-card h3 { font-size: clamp(36px, 4.25vw, 50px); }
   .business-card-headline { font-size: clamp(20px, 2.35vw, 25px); }
-  .business-card p { font-size: 14px; }
-}
+  }
 
 @media (min-width: 921px) and (max-width: 1180px) {
   .work-head h2 { font-size: clamp(54px, 6.2vw, 78px); }
@@ -786,8 +785,7 @@ footer img { display: block; height: 22px; width: auto; max-width: none; object-
   .business-card { min-height: 286px; padding: 22px 20px 22px; }
   .business-card h3 { margin-top: 62px; font-size: clamp(38px, 12vw, 56px); }
   .business-card-headline { margin-top: 22px; font-size: clamp(22px, 6.4vw, 30px); }
-  .business-card p { min-height: auto; margin-top: 16px; }
-  .business-card ul { margin-top: 28px; gap: 6px; }
+    .business-card ul { margin-top: 28px; gap: 6px; }
   .business-card li { font-size: 10px; padding: 6px 8px 7px; }
   .business-card::after { left: 20px; right: 20px; bottom: 64px; }
   .field-lines { margin-top: 54px; }

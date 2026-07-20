@@ -76,3 +76,13 @@ git push
 - Shortened Standard principle descriptions.
 - Tuned mobile card height, spacing, and type hierarchy.
 - Rebuilt `public/og-image.png` as a quieter black-based sharing image.
+
+
+## v6 — Final polish after live preview
+
+- Strengthened the About headline presence by adjusting sticky position and type scale.
+- Removed Korean support copy from Business cards to reduce information density.
+- Lightened Business card borders, background, hover motion, and mobile height.
+- Compacted the Standard section rows and brought descriptions closer.
+- Removed blur from Contact links and increased button border readability.
+- Rebuilt OG image with a larger logo, no small decorative symbol, and shorter preview description.
