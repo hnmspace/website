@@ -103,3 +103,11 @@ git push
 - Added Googlebot preview directives.
 - Added lastmod to sitemap.xml.
 - Added site.webmanifest for install/share metadata.
+
+
+## v6.3 — Korean informational copy balance
+
+- Kept major brand statements in English: Built to Endure, Long-term by design, Beyond categories, business names, and final contact phrase.
+- Changed navigation, section kickers, About list titles, business labels, business tags, Standard descriptions, and field note to Korean.
+- Aligned OG/Twitter descriptions and web manifest description with Korean-first domestic search context.
+- Preserved the existing layout, spacing, SEO structure, favicon, and OG image assets.

@@ -4,30 +4,30 @@ const businesses = [
   {
     number: '01',
     title: 'Marketing',
-    label: 'Signal',
+    label: '시장 신호',
     headline: <>Market signal.<br />Brand direction.</>,
-    points: ['Market', 'Brand', 'Communication'],
+    points: ['시장', '브랜드', '커뮤니케이션'],
   },
   {
     number: '02',
     title: 'Commerce',
-    label: 'Experience',
+    label: '운영 경험',
     headline: <>Product structure.<br />Operating rhythm.</>,
-    points: ['Product', 'Operation', 'Experience'],
+    points: ['상품', '운영', '경험'],
   },
   {
     number: '03',
     title: 'Distribution',
-    label: 'Reach',
+    label: '시장 접점',
     headline: <>Channel reach.<br />Market access.</>,
-    points: ['Channel', 'Supply', 'Market'],
+    points: ['채널', '공급', '시장'],
   },
 ]
 
 const operatingPrinciples = [
-  { title: 'Intent', text: 'Clear from the beginning.' },
-  { title: 'Discipline', text: 'Standards that last.' },
-  { title: 'Structure', text: 'Independent, aligned.' },
+  { title: 'Intent', text: '시작부터 명확하게.' },
+  { title: 'Discipline', text: '오래 지속되는 기준으로.' },
+  { title: 'Structure', text: '독립적으로, 하나의 방향으로.' },
 ]
 
 export default function Home() {
@@ -42,10 +42,10 @@ export default function Home() {
           <img src="/hnm-logo-horizontal-black.png" alt="HNM SPACE" width={1275} height={185} />
         </a>
         <nav aria-label="주요 메뉴">
-          <a href="#about">About</a>
-          <a href="#business">Business</a>
-          <a href="#standard">Standard</a>
-          <a href="#contact">Contact</a>
+          <a href="#about">소개</a>
+          <a href="#business">사업</a>
+          <a href="#standard">기준</a>
+          <a href="#contact">문의</a>
         </nav>
       </header>
 
@@ -60,28 +60,28 @@ export default function Home() {
 
       <section id="about" className="statement-section" data-section="light">
         <div className="statement-head">
-          <p className="section-kicker" data-reveal>01 / About HNM SPACE</p>
+          <p className="section-kicker" data-reveal>01 / HNM SPACE 소개</p>
           <h1 data-reveal>Long-term<br />by design.</h1>
         </div>
         <div className="standard-principles" data-reveal>
           <article className="standard-item">
             <span>01</span>
-            <strong>Perspective.</strong>
+            <strong>관점</strong>
             <p>단기적 흐름보다 오래 지속될 방향을 봅니다.</p>
           </article>
           <article className="standard-item">
             <span>02</span>
-            <strong>Independence.</strong>
+            <strong>독립성</strong>
             <p>각 사업은 고유한 전문성과 판단으로 운영됩니다.</p>
           </article>
           <article className="standard-item">
             <span>03</span>
-            <strong>Standard.</strong>
+            <strong>기준</strong>
             <p>서로 다른 사업은 하나의 기준으로 연결됩니다.</p>
           </article>
           <article className="standard-item">
             <span>04</span>
-            <strong>Endurance.</strong>
+            <strong>지속성</strong>
             <p>오래 남는 가치를 중심에 둡니다.</p>
           </article>
         </div>
@@ -89,12 +89,12 @@ export default function Home() {
 
       <section id="business" className="work-section is-dark-section" data-section="dark">
         <div className="work-head">
-          <p className="section-kicker" data-reveal>02 / Our Businesses</p>
+          <p className="section-kicker" data-reveal>02 / 사업 영역</p>
           <div className="work-title-block">
             <h2 data-reveal>Beyond categories.</h2>
             <p className="work-lead" data-reveal>
               Marketing. Commerce. Distribution.<br />
-              One standard.
+              하나의 기준으로.
             </p>
           </div>
         </div>
@@ -107,7 +107,7 @@ export default function Home() {
               </div>
               <h3>{item.title}</h3>
               <strong className="business-card-headline">{item.headline}</strong>
-              <ul aria-label={`${item.title} scope`}>
+              <ul aria-label={`${item.title} 영역`}>
                 {item.points.map((point) => (
                   <li key={point}>{point}</li>
                 ))}
@@ -118,7 +118,7 @@ export default function Home() {
       </section>
 
       <section id="standard" className="field-section" data-section="light">
-        <p className="section-kicker" data-reveal>03 / Our Standard</p>
+        <p className="section-kicker" data-reveal>03 / 운영 기준</p>
         <div className="field-lines" data-reveal>
           {operatingPrinciples.map((principle) => (
             <div key={principle.title} className="field-row">
@@ -128,12 +128,12 @@ export default function Home() {
           ))}
         </div>
         <p className="field-note" data-reveal>
-          Quiet confidence.<br />Clear standards.
+          조용한 자신감.<br />명확한 기준.
         </p>
       </section>
 
       <section id="contact" className="contact-section is-dark-section" data-section="dark">
-        <p className="section-kicker" data-reveal>04 / Contact</p>
+        <p className="section-kicker" data-reveal>04 / 문의</p>
         <h2 data-reveal>For what comes next.</h2>
         <div className="contact-links" data-reveal>
           <a href="mailto:henry@hnmspace.com"><span>henry@hnmspace.com</span></a>

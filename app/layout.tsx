@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'HNM SPACE | Built to Endure',
-    description: 'Marketing. Commerce. Distribution.',
+    description: '마케팅. 커머스. 유통.',
     url: '/',
     siteName: 'HNM SPACE',
     locale: 'ko_KR',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'HNM SPACE | Built to Endure',
-    description: 'Marketing. Commerce. Distribution.',
+    description: '마케팅. 커머스. 유통.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -89,7 +89,7 @@ const organizationSchema = {
   slogan: 'Built to Endure.',
   email: 'henry@hnmspace.com',
   areaServed: 'KR',
-  knowsAbout: ['Marketing', 'Commerce', 'Distribution', 'Brand', 'Business Operations'],
+  knowsAbout: ['마케팅', '커머스', '유통', '브랜드', '사업 운영', 'Marketing', 'Commerce', 'Distribution'],
   contactPoint: [
     {
       '@type': 'ContactPoint',
@@ -106,7 +106,7 @@ const websiteSchema = {
   name: 'HNM SPACE',
   url: siteUrl,
   inLanguage: 'ko-KR',
-  description: 'Marketing. Commerce. Distribution.',
+  description: '마케팅. 커머스. 유통.',
   publisher: {
     '@type': 'Organization',
     name: 'HNM SPACE',
