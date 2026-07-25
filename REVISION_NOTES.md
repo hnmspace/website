@@ -95,3 +95,11 @@ git push
 - Added section scroll margins so anchored sections do not sit too close to the fixed header.
 - Increased mobile Standard top breathing room and calmed first-row reveal movement.
 - Tightened mobile navigation spacing slightly.
+## v6.2 - SEO and search enhancement
+
+- Expanded Korean meta description for search snippets while keeping OG description concise.
+- Added additional Korean/English keywords for brand, business, and search discovery.
+- Added Organization and WebSite structured data via JSON-LD.
+- Added Googlebot preview directives.
+- Added lastmod to sitemap.xml.
+- Added site.webmanifest for install/share metadata.
