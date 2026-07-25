@@ -4,30 +4,30 @@ const businesses = [
   {
     number: '01',
     title: 'Marketing',
-    label: '시장 신호',
-    headline: <>Market signal.<br />Brand direction.</>,
-    points: ['시장', '브랜드', '커뮤니케이션'],
+    label: '마케팅 사업',
+    headline: <>브랜드와 시장을<br />다룹니다.</>,
+    points: ['브랜드', '콘텐츠', '커뮤니케이션'],
   },
   {
     number: '02',
     title: 'Commerce',
-    label: '운영 경험',
-    headline: <>Product structure.<br />Operating rhythm.</>,
-    points: ['상품', '운영', '경험'],
+    label: '커머스 사업',
+    headline: <>상품과 판매 구조를<br />다룹니다.</>,
+    points: ['상품', '판매', '운영'],
   },
   {
     number: '03',
     title: 'Distribution',
-    label: '시장 접점',
-    headline: <>Channel reach.<br />Market access.</>,
-    points: ['채널', '공급', '시장'],
+    label: '유통 사업',
+    headline: <>상품의 유통과 공급을<br />다룹니다.</>,
+    points: ['유통', '공급', '채널'],
   },
 ]
 
 const operatingPrinciples = [
-  { title: 'Intent', text: '시작부터 명확하게.' },
-  { title: 'Discipline', text: '오래 지속되는 기준으로.' },
-  { title: 'Structure', text: '독립적으로, 하나의 방향으로.' },
+  { title: 'Intent', text: '해야 할 일을 먼저 정리합니다.' },
+  { title: 'Discipline', text: '정한 기준을 꾸준히 지킵니다.' },
+  { title: 'Structure', text: '일이 운영될 수 있는 구조를 만듭니다.' },
 ]
 
 export default function Home() {
@@ -66,23 +66,23 @@ export default function Home() {
         <div className="standard-principles" data-reveal>
           <article className="standard-item">
             <span>01</span>
-            <strong>관점</strong>
-            <p>단기적 흐름보다 오래 지속될 방향을 봅니다.</p>
+            <strong>방향</strong>
+            <p>단기적인 흐름보다 오래 유지될 수 있는 방식을 봅니다.</p>
           </article>
           <article className="standard-item">
             <span>02</span>
-            <strong>독립성</strong>
-            <p>각 사업은 고유한 전문성과 판단으로 운영됩니다.</p>
+            <strong>운영</strong>
+            <p>필요한 일은 직접 판단하고 실행합니다.</p>
           </article>
           <article className="standard-item">
             <span>03</span>
             <strong>기준</strong>
-            <p>서로 다른 사업은 하나의 기준으로 연결됩니다.</p>
+            <p>일의 기준을 정하고 지켜갑니다.</p>
           </article>
           <article className="standard-item">
             <span>04</span>
-            <strong>지속성</strong>
-            <p>오래 남는 가치를 중심에 둡니다.</p>
+            <strong>지속</strong>
+            <p>오래 이어질 수 있는 방식을 우선합니다.</p>
           </article>
         </div>
       </section>
@@ -93,8 +93,8 @@ export default function Home() {
           <div className="work-title-block">
             <h2 data-reveal>Beyond categories.</h2>
             <p className="work-lead" data-reveal>
-              Marketing. Commerce. Distribution.<br />
-              하나의 기준으로.
+              HNM SPACE가 운영하는<br />
+              사업 영역입니다.
             </p>
           </div>
         </div>
@@ -128,7 +128,7 @@ export default function Home() {
           ))}
         </div>
         <p className="field-note" data-reveal>
-          조용한 자신감.<br />명확한 기준.
+          필요한 일을 정리하고,<br />지속 가능한 방식으로 운영합니다.
         </p>
       </section>
 

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     default: 'HNM SPACE | Built to Endure',
     template: '%s | HNM SPACE',
   },
-  description: 'HNM SPACE는 마케팅, 커머스, 유통을 기반으로 장기적 관점의 사업 구조를 운영하는 기업 그룹입니다.',
+  description: 'HNM SPACE는 장기적 관점으로 사업을 운영하는 기업입니다.',
   keywords: [
     'HNM SPACE',
     '에이치엔엠스페이스',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'HNM SPACE | Built to Endure',
-    description: '마케팅. 커머스. 유통.',
+    description: 'HNM SPACE가 운영하는 사업 영역.',
     url: '/',
     siteName: 'HNM SPACE',
     locale: 'ko_KR',
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'HNM SPACE | Built to Endure',
-    description: '마케팅. 커머스. 유통.',
+    description: 'HNM SPACE가 운영하는 사업 영역.',
     images: ['/og-image.png'],
   },
   robots: {
@@ -85,7 +85,7 @@ const organizationSchema = {
   url: siteUrl,
   logo: `${siteUrl}/icon-512.png`,
   image: `${siteUrl}/og-image.png`,
-  description: 'HNM SPACE는 마케팅, 커머스, 유통을 기반으로 장기적 관점의 사업 구조를 운영하는 기업 그룹입니다.',
+  description: 'HNM SPACE는 장기적 관점으로 사업을 운영하는 기업입니다.',
   slogan: 'Built to Endure.',
   email: 'henry@hnmspace.com',
   areaServed: 'KR',
@@ -106,7 +106,7 @@ const websiteSchema = {
   name: 'HNM SPACE',
   url: siteUrl,
   inLanguage: 'ko-KR',
-  description: '마케팅. 커머스. 유통.',
+  description: 'HNM SPACE가 운영하는 사업 영역.',
   publisher: {
     '@type': 'Organization',
     name: 'HNM SPACE',

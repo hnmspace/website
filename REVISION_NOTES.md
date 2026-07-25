@@ -111,3 +111,21 @@ git push
 - Changed navigation, section kickers, About list titles, business labels, business tags, Standard descriptions, and field note to Korean.
 - Aligned OG/Twitter descriptions and web manifest description with Korean-first domestic search context.
 - Preserved the existing layout, spacing, SEO structure, favicon, and OG image assets.
+
+
+## v6.4 — Plain Korean copy refinement
+
+- Replaced branding-heavy Korean phrases with calmer, operational Korean descriptions.
+- Adjusted About item labels and descriptions to sound more like company information than slogans.
+- Reworked Business card labels and descriptions into practical Korean copy while keeping major business names in English.
+- Replaced the Standard note with a more direct operating statement.
+
+
+## v6.5 — Company-first copy
+
+- Rebalanced the website copy so HNM SPACE remains the main subject.
+- Reduced repeated emphasis on connecting Marketing, Commerce, and Distribution under one shared direction.
+- Rewrote Business section lead to present the three divisions simply as operated business areas.
+- Rewrote Business card labels and descriptions to be informational, not philosophical.
+- Rewrote Standard section text to describe working principles without tying them back to the three divisions.
+- Updated SEO descriptions to avoid over-framing the company around the three business categories.
