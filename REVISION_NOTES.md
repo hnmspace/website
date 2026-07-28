@@ -129,3 +129,13 @@ git push
 - Rewrote Business card labels and descriptions to be informational, not philosophical.
 - Rewrote Standard section text to describe working principles without tying them back to the three divisions.
 - Updated SEO descriptions to avoid over-framing the company around the three business categories.
+
+
+## v6.6 — Company profile copy refinement
+
+- Removed practical memo-like phrases from the Standard section.
+- Replaced Standard descriptions with short category phrases: 사업 방향, 운영 기준, 사업 구조.
+- Removed repeated verb endings in the Business cards by switching to noun-style descriptions.
+- Removed duplicated Business section lead wording and returned it to a concise category line.
+- Removed comparative copy such as “단기적인 흐름보다” from the About section.
+- Kept the overall design, spacing, SEO structure, favicon, and OG image assets unchanged.

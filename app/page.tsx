@@ -5,29 +5,29 @@ const businesses = [
     number: '01',
     title: 'Marketing',
     label: '마케팅 사업',
-    headline: <>브랜드와 시장을<br />다룹니다.</>,
-    points: ['브랜드', '콘텐츠', '커뮤니케이션'],
+    headline: <>브랜드<br />커뮤니케이션</>,
+    points: ['브랜드', '콘텐츠', '캠페인'],
   },
   {
     number: '02',
     title: 'Commerce',
     label: '커머스 사업',
-    headline: <>상품과 판매 구조를<br />다룹니다.</>,
+    headline: <>상품 판매<br />운영</>,
     points: ['상품', '판매', '운영'],
   },
   {
     number: '03',
     title: 'Distribution',
     label: '유통 사업',
-    headline: <>상품의 유통과 공급을<br />다룹니다.</>,
-    points: ['유통', '공급', '채널'],
+    headline: <>공급 유통<br />채널</>,
+    points: ['공급', '유통', '채널'],
   },
 ]
 
 const operatingPrinciples = [
-  { title: 'Intent', text: '해야 할 일을 먼저 정리합니다.' },
-  { title: 'Discipline', text: '정한 기준을 꾸준히 지킵니다.' },
-  { title: 'Structure', text: '일이 운영될 수 있는 구조를 만듭니다.' },
+  { title: 'Intent', text: '사업 방향' },
+  { title: 'Discipline', text: '운영 기준' },
+  { title: 'Structure', text: '사업 구조' },
 ]
 
 export default function Home() {
@@ -67,22 +67,22 @@ export default function Home() {
           <article className="standard-item">
             <span>01</span>
             <strong>방향</strong>
-            <p>단기적인 흐름보다 오래 유지될 수 있는 방식을 봅니다.</p>
+            <p>장기적인 관점으로 사업을 봅니다.</p>
           </article>
           <article className="standard-item">
             <span>02</span>
             <strong>운영</strong>
-            <p>필요한 일은 직접 판단하고 실행합니다.</p>
+            <p>사업의 성격에 맞게 운영합니다.</p>
           </article>
           <article className="standard-item">
             <span>03</span>
             <strong>기준</strong>
-            <p>일의 기준을 정하고 지켜갑니다.</p>
+            <p>운영 기준을 분명히 합니다.</p>
           </article>
           <article className="standard-item">
             <span>04</span>
             <strong>지속</strong>
-            <p>오래 이어질 수 있는 방식을 우선합니다.</p>
+            <p>지속 가능한 구조를 지향합니다.</p>
           </article>
         </div>
       </section>
@@ -93,8 +93,7 @@ export default function Home() {
           <div className="work-title-block">
             <h2 data-reveal>Beyond categories.</h2>
             <p className="work-lead" data-reveal>
-              HNM SPACE가 운영하는<br />
-              사업 영역입니다.
+              Marketing. Commerce. Distribution.
             </p>
           </div>
         </div>
@@ -128,7 +127,7 @@ export default function Home() {
           ))}
         </div>
         <p className="field-note" data-reveal>
-          필요한 일을 정리하고,<br />지속 가능한 방식으로 운영합니다.
+          장기적인 관점으로<br />사업을 운영합니다.
         </p>
       </section>
 
