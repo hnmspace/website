@@ -25,9 +25,9 @@ const businesses = [
 ]
 
 const operatingPrinciples = [
-  { title: 'Intent', text: '사업 방향' },
-  { title: 'Discipline', text: '운영 기준' },
-  { title: 'Structure', text: '사업 구조' },
+  { title: 'Market', text: '시장성' },
+  { title: 'Product', text: '상품성' },
+  { title: 'Operation', text: '운영 지속성' },
 ]
 
 export default function Home() {
@@ -66,23 +66,23 @@ export default function Home() {
         <div className="standard-principles" data-reveal>
           <article className="standard-item">
             <span>01</span>
-            <strong>방향</strong>
-            <p>장기적인 관점으로 사업을 봅니다.</p>
+            <strong>회사</strong>
+            <p>사업을 만들고 운영하는 회사입니다.</p>
           </article>
           <article className="standard-item">
             <span>02</span>
+            <strong>관점</strong>
+            <p>장기적인 관점으로 사업을 봅니다.</p>
+          </article>
+          <article className="standard-item">
+            <span>03</span>
             <strong>운영</strong>
             <p>사업의 성격에 맞게 운영합니다.</p>
           </article>
           <article className="standard-item">
-            <span>03</span>
-            <strong>기준</strong>
-            <p>운영 기준을 분명히 합니다.</p>
-          </article>
-          <article className="standard-item">
             <span>04</span>
             <strong>지속</strong>
-            <p>지속 가능한 구조를 지향합니다.</p>
+            <p>오래 이어질 수 있는 구조를 지향합니다.</p>
           </article>
         </div>
       </section>
@@ -117,7 +117,7 @@ export default function Home() {
       </section>
 
       <section id="standard" className="field-section" data-section="light">
-        <p className="section-kicker" data-reveal>03 / 운영 기준</p>
+        <p className="section-kicker" data-reveal>03 / 사업 기준</p>
         <div className="field-lines" data-reveal>
           {operatingPrinciples.map((principle) => (
             <div key={principle.title} className="field-row">
@@ -127,7 +127,7 @@ export default function Home() {
           ))}
         </div>
         <p className="field-note" data-reveal>
-          장기적인 관점으로<br />사업을 운영합니다.
+          시장성, 상품성, 운영 지속성을 기준으로<br />사업을 검토합니다.
         </p>
       </section>
 

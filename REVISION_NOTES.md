@@ -139,3 +139,11 @@ git push
 - Removed duplicated Business section lead wording and returned it to a concise category line.
 - Removed comparative copy such as “단기적인 흐름보다” from the About section.
 - Kept the overall design, spacing, SEO structure, favicon, and OG image assets unchanged.
+
+
+## v6.7 — Business criteria section
+
+- Replaced the overlapping “운영 기준” section with “사업 기준”.
+- Changed the 03 section to Market / Product / Operation so it explains how HNM SPACE views business opportunities rather than repeating company philosophy.
+- Removed the “기준” item from the About section and reframed About as company identity.
+- Preserved the existing four-section website rhythm without making the page lighter or more repetitive.
