@@ -147,3 +147,10 @@ git push
 - Changed the 03 section to Market / Product / Operation so it explains how HNM SPACE views business opportunities rather than repeating company philosophy.
 - Removed the “기준” item from the About section and reframed About as company identity.
 - Preserved the existing four-section website rhythm without making the page lighter or more repetitive.
+
+
+## v6.8 — About copy refinement
+
+- Changed the first About item from generic company wording to identity-focused wording.
+- Replaced overly obvious operation and sustainability sentences with more natural company-profile copy.
+- Preserved the v6.7 section structure: introduction, business areas, business criteria, contact.

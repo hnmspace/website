@@ -66,8 +66,8 @@ export default function Home() {
         <div className="standard-principles" data-reveal>
           <article className="standard-item">
             <span>01</span>
-            <strong>회사</strong>
-            <p>사업을 만들고 운영하는 회사입니다.</p>
+            <strong>정체성</strong>
+            <p>가능성을 사업으로 구체화합니다.</p>
           </article>
           <article className="standard-item">
             <span>02</span>
@@ -77,12 +77,12 @@ export default function Home() {
           <article className="standard-item">
             <span>03</span>
             <strong>운영</strong>
-            <p>사업의 성격에 맞게 운영합니다.</p>
+            <p>사업에 필요한 과정을 직접 관리합니다.</p>
           </article>
           <article className="standard-item">
             <span>04</span>
             <strong>지속</strong>
-            <p>오래 이어질 수 있는 구조를 지향합니다.</p>
+            <p>오래 이어질 수 있는 방식을 고민합니다.</p>
           </article>
         </div>
       </section>
