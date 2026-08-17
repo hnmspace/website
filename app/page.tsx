@@ -24,10 +24,10 @@ const businesses = [
   },
 ]
 
-const operatingPrinciples = [
-  { title: 'Market', text: '시장성' },
-  { title: 'Product', text: '상품성' },
-  { title: 'Operation', text: '운영 지속성' },
+const companyFacts = [
+  { title: 'Name', text: 'HNM SPACE' },
+  { title: 'Base', text: 'Republic of Korea' },
+  { title: 'Web', text: 'hnmspace.com' },
 ]
 
 export default function Home() {
@@ -42,9 +42,8 @@ export default function Home() {
           <img src="/hnm-logo-horizontal-black.png" alt="HNM SPACE" width={1275} height={185} />
         </a>
         <nav aria-label="주요 메뉴">
-          <a href="#about">소개</a>
           <a href="#business">사업</a>
-          <a href="#standard">기준</a>
+          <a href="#standard">HNM SPACE</a>
           <a href="#contact">문의</a>
         </nav>
       </header>
@@ -58,38 +57,9 @@ export default function Home() {
         <div className="scroll-indicator" aria-hidden="true"><span>Scroll</span><i /></div>
       </section>
 
-      <section id="about" className="statement-section" data-section="light">
-        <div className="statement-head">
-          <p className="section-kicker" data-reveal>01 / HNM SPACE 소개</p>
-          <h1 data-reveal>Long-term<br />by design.</h1>
-        </div>
-        <div className="standard-principles" data-reveal>
-          <article className="standard-item">
-            <span>01</span>
-            <strong>정체성</strong>
-            <p>가능성을 사업으로 구체화합니다.</p>
-          </article>
-          <article className="standard-item">
-            <span>02</span>
-            <strong>관점</strong>
-            <p>장기적인 관점으로 사업을 봅니다.</p>
-          </article>
-          <article className="standard-item">
-            <span>03</span>
-            <strong>운영</strong>
-            <p>사업에 필요한 과정을 직접 관리합니다.</p>
-          </article>
-          <article className="standard-item">
-            <span>04</span>
-            <strong>지속</strong>
-            <p>오래 이어질 수 있는 방식을 고민합니다.</p>
-          </article>
-        </div>
-      </section>
-
       <section id="business" className="work-section is-dark-section" data-section="dark">
         <div className="work-head">
-          <p className="section-kicker" data-reveal>02 / 사업 영역</p>
+          <p className="section-kicker" data-reveal>01 / 사업 영역</p>
           <div className="work-title-block">
             <h2 data-reveal>Beyond categories.</h2>
             <p className="work-lead" data-reveal>
@@ -117,9 +87,9 @@ export default function Home() {
       </section>
 
       <section id="standard" className="field-section" data-section="light">
-        <p className="section-kicker" data-reveal>03 / 사업 기준</p>
+        <p className="section-kicker" data-reveal>02 / HNM SPACE</p>
         <div className="field-lines" data-reveal>
-          {operatingPrinciples.map((principle) => (
+          {companyFacts.map((principle) => (
             <div key={principle.title} className="field-row">
               <strong>{principle.title}</strong>
               <span>{principle.text}</span>
@@ -127,12 +97,12 @@ export default function Home() {
           ))}
         </div>
         <p className="field-note" data-reveal>
-          시장성, 상품성, 운영 지속성을 기준으로<br />사업을 검토합니다.
+          Built to Endure.<br />HNM SPACE
         </p>
       </section>
 
       <section id="contact" className="contact-section is-dark-section" data-section="dark">
-        <p className="section-kicker" data-reveal>04 / 문의</p>
+        <p className="section-kicker" data-reveal>03 / 문의</p>
         <h2 data-reveal>For what comes next.</h2>
         <div className="contact-links" data-reveal>
           <a href="mailto:henry@hnmspace.com"><span>henry@hnmspace.com</span></a>

@@ -154,3 +154,13 @@ git push
 - Changed the first About item from generic company wording to identity-focused wording.
 - Replaced overly obvious operation and sustainability sentences with more natural company-profile copy.
 - Preserved the v6.7 section structure: introduction, business areas, business criteria, contact.
+
+
+## v6.9 — Compact company information structure
+
+- Removed the previous About section to avoid overlapping identity and criteria copy.
+- Renumbered Business section to 01.
+- Replaced the Business Criteria section with a concise HNM SPACE information section.
+- New HNM SPACE section: Name, Base, Web.
+- Renumbered Contact section to 03.
+- Simplified the header navigation to Business, HNM SPACE, Contact.
