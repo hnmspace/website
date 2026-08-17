@@ -164,3 +164,10 @@ git push
 - New HNM SPACE section: Name, Base, Web.
 - Renumbered Contact section to 03.
 - Simplified the header navigation to Business, HNM SPACE, Contact.
+
+
+## v6.10 — Header navigation language alignment
+
+- Updated header navigation labels from Korean to English.
+- Final header labels: Business / HNM SPACE / Contact.
+- Body section labels remain unchanged.

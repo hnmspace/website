@@ -42,9 +42,9 @@ export default function Home() {
           <img src="/hnm-logo-horizontal-black.png" alt="HNM SPACE" width={1275} height={185} />
         </a>
         <nav aria-label="주요 메뉴">
-          <a href="#business">사업</a>
+          <a href="#business">Business</a>
           <a href="#standard">HNM SPACE</a>
-          <a href="#contact">문의</a>
+          <a href="#contact">Contact</a>
         </nav>
       </header>
 
