@@ -59,7 +59,7 @@ export default function Home() {
 
       <section id="business" className="work-section is-dark-section" data-section="dark">
         <div className="work-head">
-          <p className="section-kicker" data-reveal>01 / 사업 영역</p>
+          <p className="section-kicker" data-reveal>01 / Business</p>
           <div className="work-title-block">
             <h2 data-reveal>Beyond categories.</h2>
             <p className="work-lead" data-reveal>
@@ -102,7 +102,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="contact-section is-dark-section" data-section="dark">
-        <p className="section-kicker" data-reveal>03 / 문의</p>
+        <p className="section-kicker" data-reveal>03 / Contact</p>
         <h2 data-reveal>For what comes next.</h2>
         <div className="contact-links" data-reveal>
           <a href="mailto:henry@hnmspace.com"><span>henry@hnmspace.com</span></a>

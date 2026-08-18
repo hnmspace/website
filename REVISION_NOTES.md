@@ -171,3 +171,9 @@ git push
 - Updated header navigation labels from Korean to English.
 - Final header labels: Business / HNM SPACE / Contact.
 - Body section labels remain unchanged.
+
+
+## v6.11 — Section label language alignment
+
+- Updated visible page section labels to match the English header navigation.
+- Final section labels: 01 / Business, 02 / HNM SPACE, 03 / Contact.
