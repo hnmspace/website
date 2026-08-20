@@ -25,9 +25,9 @@ const businesses = [
 ]
 
 const companyFacts = [
-  { title: 'Name', text: 'HNM SPACE' },
+  { title: 'Slogan', text: 'Built to Endure.' },
   { title: 'Base', text: 'Republic of Korea' },
-  { title: 'Web', text: 'hnmspace.com' },
+  { title: 'Website', text: 'hnmspace.com' },
 ]
 
 export default function Home() {
@@ -97,7 +97,7 @@ export default function Home() {
           ))}
         </div>
         <p className="field-note" data-reveal>
-          Built to Endure.<br />HNM SPACE
+          HNM SPACE
         </p>
       </section>
 

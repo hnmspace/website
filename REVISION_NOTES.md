@@ -177,3 +177,10 @@ git push
 
 - Updated visible page section labels to match the English header navigation.
 - Final section labels: 01 / Business, 02 / HNM SPACE, 03 / Contact.
+
+
+## v6.12 — HNM SPACE section copy refinement
+
+- Replaced Name / HNM SPACE with Slogan / Built to Endure.
+- Updated Web label to Website.
+- Reduced repeated wording in the HNM SPACE section note.
