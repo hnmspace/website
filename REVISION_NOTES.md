@@ -203,3 +203,9 @@ git push
 - Updated footer information labels to Korean.
 - Kept contact@hnmspace.com as the main Contact section email.
 - Kept henry@hnmspace.com for collaboration and proposals in the footer.
+
+
+## v6.15 — Footer base field removal
+
+- Removed the footer Base/소재 field.
+- Kept representative, business inquiries, partnership/proposals, website, policy links, and copyright.

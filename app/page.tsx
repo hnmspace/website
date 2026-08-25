@@ -140,10 +140,6 @@ export default function Home() {
                 <strong>웹사이트</strong>
                 <a href="https://hnmspace.com">hnmspace.com</a>
               </p>
-              <p>
-                <strong>소재</strong>
-                <span>대한민국</span>
-              </p>
             </div>
           </div>
 
