@@ -119,26 +119,30 @@ export default function Home() {
 
           <div className="footer-content">
             <nav className="footer-policy" aria-label="정책 링크">
-              <a href="/terms">Terms of Use</a>
-              <a href="/privacy">Privacy Policy</a>
+              <a href="/terms">이용약관</a>
+              <a href="/privacy">개인정보처리방침</a>
             </nav>
 
             <div className="footer-info" aria-label="회사 문의 정보">
               <p>
-                <strong>Business Inquiries</strong>
+                <strong>대표자</strong>
+                <span>김현호</span>
+              </p>
+              <p>
+                <strong>사업 문의</strong>
                 <a href="mailto:contact@hnmspace.com">contact@hnmspace.com</a>
               </p>
               <p>
-                <strong>Partnership &amp; Proposals</strong>
+                <strong>협업·제안 문의</strong>
                 <a href="mailto:henry@hnmspace.com">henry@hnmspace.com</a>
               </p>
               <p>
-                <strong>Website</strong>
+                <strong>웹사이트</strong>
                 <a href="https://hnmspace.com">hnmspace.com</a>
               </p>
               <p>
-                <strong>Base</strong>
-                <span>Republic of Korea</span>
+                <strong>소재</strong>
+                <span>대한민국</span>
               </p>
             </div>
           </div>

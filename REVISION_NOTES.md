@@ -194,3 +194,12 @@ git push
 - Added Partnership & Proposals: henry@hnmspace.com.
 - Added Website, Base, and full copyright wording.
 - Added basic Terms of Use and Privacy Policy pages so footer policy links have destinations.
+
+
+## v6.14 — Korean trust footer
+
+- Updated footer policy links to Korean labels.
+- Added representative name: 김현호.
+- Updated footer information labels to Korean.
+- Kept contact@hnmspace.com as the main Contact section email.
+- Kept henry@hnmspace.com for collaboration and proposals in the footer.
