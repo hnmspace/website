@@ -87,13 +87,13 @@ const organizationSchema = {
   image: `${siteUrl}/og-image.png`,
   description: 'HNM SPACE는 장기적인 관점으로 사업을 운영하는 기업입니다.',
   slogan: 'Built to Endure.',
-  email: 'henry@hnmspace.com',
+  email: 'contact@hnmspace.com',
   areaServed: 'KR',
   knowsAbout: ['마케팅', '커머스', '유통', '브랜드', '사업 운영', 'Marketing', 'Commerce', 'Distribution'],
   contactPoint: [
     {
       '@type': 'ContactPoint',
-      email: 'henry@hnmspace.com',
+      email: 'contact@hnmspace.com',
       contactType: 'business inquiries',
       availableLanguage: ['ko', 'en'],
     },

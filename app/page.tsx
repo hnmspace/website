@@ -105,14 +105,48 @@ export default function Home() {
         <p className="section-kicker" data-reveal>03 / Contact</p>
         <h2 data-reveal>For what comes next.</h2>
         <div className="contact-links" data-reveal>
-          <a href="mailto:henry@hnmspace.com"><span>henry@hnmspace.com</span></a>
+          <a href="mailto:contact@hnmspace.com"><span>contact@hnmspace.com</span></a>
           <a href="https://hnmspace.com"><span>hnmspace.com</span></a>
         </div>
       </section>
 
-      <footer data-section="light">
-        <img src="/hnm-symbol-black.png" alt="HNM SPACE 심볼" width={746} height={183} />
-        <span>© 2026 HNM SPACE</span>
+      <footer className="site-footer" data-section="dark">
+        <div className="footer-inner">
+          <div className="footer-brand">
+            <img src="/hnm-symbol-white.png" alt="HNM SPACE 심볼" width={746} height={183} />
+            <p>Built to Endure.</p>
+          </div>
+
+          <div className="footer-content">
+            <nav className="footer-policy" aria-label="정책 링크">
+              <a href="/terms">Terms of Use</a>
+              <a href="/privacy">Privacy Policy</a>
+            </nav>
+
+            <div className="footer-info" aria-label="회사 문의 정보">
+              <p>
+                <strong>Business Inquiries</strong>
+                <a href="mailto:contact@hnmspace.com">contact@hnmspace.com</a>
+              </p>
+              <p>
+                <strong>Partnership &amp; Proposals</strong>
+                <a href="mailto:henry@hnmspace.com">henry@hnmspace.com</a>
+              </p>
+              <p>
+                <strong>Website</strong>
+                <a href="https://hnmspace.com">hnmspace.com</a>
+              </p>
+              <p>
+                <strong>Base</strong>
+                <span>Republic of Korea</span>
+              </p>
+            </div>
+          </div>
+
+          <div className="footer-bottom">
+            <span>© 2026 HNM SPACE. All rights reserved.</span>
+          </div>
+        </div>
       </footer>
     </main>
   )

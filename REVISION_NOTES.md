@@ -184,3 +184,13 @@ git push
 - Replaced Name / HNM SPACE with Slogan / Built to Endure.
 - Updated Web label to Website.
 - Reduced repeated wording in the HNM SPACE section note.
+
+
+## v6.13 — Trust footer and contact routing
+
+- Updated Contact section primary email to contact@hnmspace.com.
+- Rebuilt footer into a trust-style dark footer with policy links and public contact information.
+- Added Business Inquiries: contact@hnmspace.com.
+- Added Partnership & Proposals: henry@hnmspace.com.
+- Added Website, Base, and full copyright wording.
+- Added basic Terms of Use and Privacy Policy pages so footer policy links have destinations.
