@@ -216,3 +216,12 @@ git push
 - Replaced Slogan / Base / Website with Ventures / Services / Partnerships.
 - 02 / HNM SPACE now explains how the company participates in business rather than repeating basic company information.
 - Removed the redundant HNM SPACE note at the bottom of the section.
+
+
+## v6.17 — Business section copy corrections
+
+- Removed the duplicated “Marketing. Commerce. Distribution.” line below “Beyond categories.”
+- Updated Business card labels and detail tags to avoid repeating the large card copy.
+- Marketing: 전략 / 콘텐츠 / 캠페인.
+- Commerce: 상품 기획 / 판매 채널 / 운영 관리.
+- Distribution: 소싱 / 공급 관리 / 채널 운영.

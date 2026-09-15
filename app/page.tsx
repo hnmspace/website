@@ -4,23 +4,23 @@ const businesses = [
   {
     number: '01',
     title: 'Marketing',
-    label: '마케팅 사업',
+    label: '마케팅',
     headline: <>브랜드<br />커뮤니케이션</>,
-    points: ['브랜드', '콘텐츠', '캠페인'],
+    points: ['전략', '콘텐츠', '캠페인'],
   },
   {
     number: '02',
     title: 'Commerce',
-    label: '커머스 사업',
+    label: '커머스',
     headline: <>상품 판매<br />운영</>,
-    points: ['상품', '판매', '운영'],
+    points: ['상품 기획', '판매 채널', '운영 관리'],
   },
   {
     number: '03',
     title: 'Distribution',
-    label: '유통 사업',
+    label: '유통',
     headline: <>공급 유통<br />채널</>,
-    points: ['공급', '유통', '채널'],
+    points: ['소싱', '공급 관리', '채널 운영'],
   },
 ]
 
@@ -62,9 +62,6 @@ export default function Home() {
           <p className="section-kicker" data-reveal>01 / Business</p>
           <div className="work-title-block">
             <h2 data-reveal>Beyond categories.</h2>
-            <p className="work-lead" data-reveal>
-              Marketing. Commerce. Distribution.
-            </p>
           </div>
         </div>
         <div className="business-grid">
