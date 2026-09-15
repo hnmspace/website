@@ -209,3 +209,10 @@ git push
 
 - Removed the footer Base/소재 field.
 - Kept representative, business inquiries, partnership/proposals, website, policy links, and copyright.
+
+
+## v6.16 — HNM SPACE business model section
+
+- Replaced Slogan / Base / Website with Ventures / Services / Partnerships.
+- 02 / HNM SPACE now explains how the company participates in business rather than repeating basic company information.
+- Removed the redundant HNM SPACE note at the bottom of the section.

@@ -25,9 +25,9 @@ const businesses = [
 ]
 
 const companyFacts = [
-  { title: 'Slogan', text: 'Built to Endure.' },
-  { title: 'Base', text: 'Republic of Korea' },
-  { title: 'Website', text: 'hnmspace.com' },
+  { title: 'Ventures', text: '자체 사업 및 브랜드 운영' },
+  { title: 'Services', text: '마케팅·커머스·유통 관련 업무 수행' },
+  { title: 'Partnerships', text: '공동 프로젝트 및 사업 제휴' },
 ]
 
 export default function Home() {
@@ -96,9 +96,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="field-note" data-reveal>
-          HNM SPACE
-        </p>
       </section>
 
       <section id="contact" className="contact-section is-dark-section" data-section="dark">
