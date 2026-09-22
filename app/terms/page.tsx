@@ -44,7 +44,7 @@ export default function TermsPage() {
           <article>
             <h2>문의</h2>
             <p>
-              Contact: <a href="mailto:contact@hnmspace.com">contact@hnmspace.com</a>
+              <a href="mailto:contact@hnmspace.com">contact@hnmspace.com</a>
             </p>
           </article>
         </div>

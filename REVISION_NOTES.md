@@ -225,3 +225,12 @@ git push
 - Marketing: 전략 / 콘텐츠 / 캠페인.
 - Commerce: 상품 기획 / 판매 채널 / 운영 관리.
 - Distribution: 소싱 / 공급 관리 / 채널 운영.
+
+
+## v6.18 — Google favicon + legal contact cleanup
+
+- Rebuilt favicon assets from the official master favicon.
+- Removed all transparent outer pixels by using a full black square background.
+- Added favicon-48x48.png to metadata for search-engine compatibility.
+- Updated favicon.ico, 16/32/48 PNGs, Apple touch icon, 192/512 app icons, and hnm-favicon.png.
+- Removed redundant “Contact:” and “Privacy Contact:” prefixes from the legal pages.
