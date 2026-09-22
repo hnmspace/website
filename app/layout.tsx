@@ -27,6 +27,11 @@ export const metadata: Metadata = {
   creator: 'HNM SPACE',
   publisher: 'HNM SPACE',
   category: 'Business',
+  verification: {
+    other: {
+      'naver-site-verification': '96a441559b9e4989cb2592dab989cf8d0c2bcd57',
+    },
+  },
   alternates: {
     canonical: '/',
   },
