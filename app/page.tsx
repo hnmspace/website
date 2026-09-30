@@ -49,9 +49,9 @@ export default function Home() {
       </header>
 
       <section id="top" className="hero" data-section="light">
-        <div className="hero-mark" data-reveal="hero">
+        <h1 className="hero-mark" data-reveal="hero" aria-label="HNM SPACE">
           <img src="/hnm-logo-primary-black.png" alt="HNM SPACE" width={746} height={287} />
-        </div>
+        </h1>
         <p className="hero-line" data-reveal>Built to Endure.</p>
         <div className="hero-rule" data-line aria-hidden="true" />
         <div className="scroll-indicator" aria-hidden="true"><span>Scroll</span><i /></div>
