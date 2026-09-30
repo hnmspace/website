@@ -190,6 +190,9 @@ nav a:hover::after { transform: scaleX(1); }
 }
 .hero-mark {
   --hero-progress: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
   position: relative;
   z-index: 1;
   transform: translate3d(0, calc(var(--hero-progress) * -30px), 0) scale(calc(1 - (var(--hero-progress) * 0.045)));
